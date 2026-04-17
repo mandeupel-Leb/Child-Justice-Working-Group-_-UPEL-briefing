@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UPEL — Partner Briefing | March 2 – April 16, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,400;1,9..144,500&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy-deep: #0A1628;
+  --navy: #122942;
+  --ivory: #F4EFE6;
+  --ivory-warm: #EDE4D3;
+  --paper: #FAF7F0;
+  --paper-dim: #F2EDE2;
+  --blood: #8B1A1A;
+  --blood-bright: #C62828;
+  --blood-soft: #E8B4B4;
+  --ember: #D97706;
+  --sage: #3F6B4A;
+  --gold: #B08D57;
+  --rule: rgba(10,22,40,0.12);
+  --rule-strong: rgba(10,22,40,0.35);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Fraunces',Georgia,serif;background:var(--paper);color:var(--navy-deep);line-height:1.5;font-size:16px;-webkit-font-smoothing:antialiased}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;background-image:radial-gradient(circle at 20% 30%,rgba(176,141,87,0.04) 0%,transparent 50%),radial-gradient(circle at 80% 70%,rgba(10,22,40,0.03) 0%,transparent 50%);z-index:1}
+.wrap{max-width:1280px;margin:0 auto;position:relative;z-index:2}
+.slabel{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--blood-bright);margin-bottom:8px;font-weight:500}
+.sh{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(40px,5vw,72px);line-height:1.05;letter-spacing:-0.025em;margin-bottom:24px;color:var(--navy-deep);font-variation-settings:"opsz" 144}
+.sh em{font-style:italic;font-weight:400;color:var(--blood-bright)}
+.ssub{font-family:'Fraunces',serif;font-size:19px;line-height:1.5;font-weight:300;color:var(--navy);max-width:720px;margin-bottom:48px}
+
+/* NAV */
+.top-nav{position:fixed;top:0;left:0;right:0;background:rgba(250,247,240,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--rule);z-index:100;padding:14px 32px;display:flex;justify-content:space-between;align-items:center;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.12em}
+.top-nav .brand{display:flex;align-items:center;gap:10px}
+.top-nav .brand img{height:26px}
+.top-nav .brand strong{font-family:'Fraunces',serif;font-weight:500;font-size:13px;letter-spacing:0.05em}
+.nav-links{display:flex;gap:8px;align-items:center}
+.nav-links a{color:var(--navy);text-decoration:none;font-size:11px;font-weight:500;padding:6px 12px;border:1px solid transparent;transition:all .2s}
+.nav-links a:hover{color:var(--blood-bright);border-color:var(--blood-bright);background:rgba(198,40,40,0.04)}
+.nav-links a:active{background:rgba(198,40,40,0.1)}
+.nav-links .urgent{color:var(--blood-bright);font-weight:700;padding:3px 8px;border:1px solid var(--blood-bright);animation:pulse 2.4s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.55}}
+
+/* HERO */
+.hero{min-height:100vh;background:var(--navy-deep);color:var(--ivory);padding:140px 60px 80px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between}
+.hero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(ellipse at 15% 20%,rgba(198,40,40,0.14) 0%,transparent 55%),radial-gradient(ellipse at 85% 80%,rgba(176,141,87,0.08) 0%,transparent 50%);pointer-events:none}
+.hero::after{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(0deg,transparent 0px,transparent 39px,rgba(244,239,230,0.018) 40px),repeating-linear-gradient(90deg,transparent 0px,transparent 39px,rgba(244,239,230,0.018) 40px);pointer-events:none}
+.hero-top{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:flex-start;padding-bottom:48px;border-bottom:1px solid rgba(244,239,230,0.15)}
+
+.hero-meta{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--ivory-warm);opacity:.75;text-align:right;line-height:2}
+.hero-meta strong{color:var(--blood-soft)}
+.hero-center{position:relative;z-index:2;margin:auto 0;max-width:1100px}
+.hero-kicker{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:var(--blood-soft);margin-bottom:32px;padding-left:44px;position:relative}
+.hero-kicker::before{content:'';position:absolute;left:0;top:50%;width:32px;height:1px;background:var(--blood-soft)}
+.hero h1{font-family:'Fraunces',serif;font-weight:200;font-size:clamp(44px,7vw,104px);line-height:.98;letter-spacing:-0.035em;margin-bottom:36px;font-variation-settings:"opsz" 144}
+.hero h1 em{font-style:italic;color:#FF8B8B;font-weight:300}
+.hero-lede{font-family:'Fraunces',serif;font-size:clamp(17px,1.6vw,21px);line-height:1.55;font-weight:300;color:var(--ivory-warm);max-width:740px;border-left:2px solid var(--blood-bright);padding-left:24px}
+.hero-bottom{position:relative;z-index:2;display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:rgba(244,239,230,0.15);border-top:1px solid rgba(244,239,230,0.15);border-bottom:1px solid rgba(244,239,230,0.15)}
+.hero-stat{background:var(--navy-deep);padding:28px 24px}
+.hero-stat-num{font-family:'Fraunces',serif;font-size:44px;font-weight:300;line-height:1;color:var(--ivory);margin-bottom:6px;font-variation-settings:"opsz" 144}
+.hero-stat-label{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--ivory-warm);opacity:.65}
+
+/* SECTION PATTERNS */
+.sec-light{padding:100px 60px;background:var(--paper)}
+.sec-dim{padding:100px 60px;background:var(--paper-dim);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.sec-dark{padding:100px 60px;background:var(--navy-deep);color:var(--ivory);position:relative;overflow:hidden}
+.sec-dark::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 20% 20%,rgba(198,40,40,0.18) 0%,transparent 45%),radial-gradient(circle at 90% 80%,rgba(176,141,87,0.08) 0%,transparent 50%);pointer-events:none}
+.sec-dark::after{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(0deg,transparent 0px,transparent 39px,rgba(244,239,230,0.02) 40px),repeating-linear-gradient(90deg,transparent 0px,transparent 39px,rgba(244,239,230,0.02) 40px);pointer-events:none}
+.sec-dark .slabel{color:var(--blood-soft)}
+.sec-dark .sh em{color:#FF8B8B}
+.sec-sage .slabel{color:var(--sage)}
+.sec-sage .sh em{color:var(--sage)}
+
+/* GRID TILE SYSTEM */
+.tile-grid{display:grid;gap:0;border:1px solid var(--rule-strong);margin-top:32px}
+.tile-grid.c5{grid-template-columns:repeat(5,1fr)}
+.tile-grid.c4{grid-template-columns:repeat(4,1fr)}
+.tile-grid.c3{grid-template-columns:repeat(3,1fr)}
+.tile-grid.c2{grid-template-columns:repeat(2,1fr)}
+.tile{padding:36px 26px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);transition:background .3s}
+.tile:hover{background:rgba(176,141,87,0.05)}
+.tile-num{font-family:'Fraunces',serif;font-size:52px;font-weight:300;line-height:.9;color:var(--navy-deep);font-variation-settings:"opsz" 144;margin-bottom:10px}
+.tile.alert .tile-num{color:var(--blood-bright);font-style:italic;font-weight:400}
+.tile.positive .tile-num{color:var(--sage);font-style:italic}
+.tile-label{font-family:'Fraunces',serif;font-size:15px;font-weight:500;color:var(--navy-deep);margin-bottom:3px;line-height:1.3}
+.tile-sub{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--navy);opacity:.55}
+.tile-detail{font-family:'Inter',sans-serif;font-size:12px;color:var(--navy);opacity:.6;line-height:1.5;margin-top:6px}
+
+/* DARK TILES */
+.sec-dark .tile{border-color:rgba(244,239,230,0.15)}
+.sec-dark .tile-num{color:var(--ivory)}
+.sec-dark .tile.alert .tile-num{color:#FF8B8B;font-style:italic;font-weight:400}
+.sec-dark .tile-label{color:var(--ivory)}
+.sec-dark .tile-sub{color:var(--ivory-warm);opacity:.6}
+.sec-dark .tile-detail{color:var(--ivory-warm);opacity:.5}
+.sec-dark .tile:hover{background:rgba(244,239,230,0.04)}
+
+/* REGION BARS */
+.region-grid{margin-top:32px;border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule-strong)}
+.region-row{display:grid;grid-template-columns:1fr 2fr 90px;align-items:center;padding:24px 28px;border-bottom:1px solid var(--rule);gap:28px;transition:background .3s}
+.region-row:last-child{border-bottom:none}
+.region-row:hover{background:rgba(176,141,87,0.05)}
+.region-row.featured{background:rgba(198,40,40,0.04)}
+.rname{font-family:'Fraunces',serif;font-size:24px;font-weight:400;color:var(--navy-deep)}
+.region-row.featured .rname{color:var(--blood-bright);font-style:italic;font-weight:500}
+.rname-sub{display:block;font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--navy);opacity:.55;margin-top:4px;font-style:normal}
+.rbar-wrap{height:40px;background:var(--paper-dim);position:relative;border:1px solid var(--rule);overflow:hidden}
+.rbar{position:absolute;top:0;left:0;bottom:0;background:linear-gradient(90deg,var(--navy-deep),var(--navy));width:0;transition:width 1.2s cubic-bezier(.22,.9,.22,1)}
+.region-row.featured .rbar{background:linear-gradient(90deg,var(--blood),var(--blood-bright))}
+.rbar-label{position:absolute;right:14px;top:50%;transform:translateY(-50%);font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em;color:var(--ivory);font-weight:500;z-index:2}
+.rcount{font-family:'Fraunces',serif;font-size:38px;font-weight:300;color:var(--navy-deep);text-align:right;font-variation-settings:"opsz" 144}
+.region-row.featured .rcount{color:var(--blood-bright);font-style:italic;font-weight:400}
+
+/* DEMO BARS */
+.demo-split{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:32px;border:1px solid var(--rule-strong)}
+.demo-half{padding:40px 36px;border-right:1px solid var(--rule)}
+.demo-half:last-child{border-right:none}
+.demo-half-title{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--navy);opacity:.65;margin-bottom:28px;font-weight:500}
+.dbar-row{margin-bottom:14px}
+.dbar-label{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:4px;font-family:'Fraunces',serif;font-size:16px;font-weight:400;color:var(--navy-deep)}
+.dbar-label .val{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--navy);opacity:.7;letter-spacing:.1em}
+.dbar-track{height:5px;background:var(--paper);border:1px solid var(--rule);position:relative;overflow:hidden}
+.dbar-fill{position:absolute;top:0;left:0;bottom:0;background:var(--navy-deep);width:0;transition:width 1s ease-out}
+.dbar-fill.alt{background:var(--blood-bright)}
+
+/* APRIL 8 */
+.a8-hero{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:end;padding-bottom:48px;border-bottom:1px solid rgba(244,239,230,0.2);margin-bottom:48px}
+.a8-date{font-family:'Fraunces',serif;font-weight:200;font-size:clamp(88px,12vw,180px);line-height:.82;letter-spacing:-0.05em;color:var(--ivory);font-variation-settings:"opsz" 144}
+.a8-date .eight{color:#FF8B8B;font-style:italic;font-weight:400;display:block}
+.a8-date .month{font-size:.17em;font-weight:400;letter-spacing:.15em;text-transform:uppercase;font-family:'JetBrains Mono',monospace;color:var(--ivory-warm);opacity:.6;display:block;margin-bottom:20px}
+.a8-intro{font-family:'Fraunces',serif;font-size:20px;line-height:1.55;font-weight:300;color:var(--ivory-warm)}
+.a8-intro em{font-style:italic;color:#FF8B8B;font-weight:400}
+.a8-flow{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(244,239,230,0.15);border:1px solid rgba(244,239,230,0.15);position:relative;z-index:2;margin-top:48px}
+.a8-flow-card{background:var(--navy-deep);padding:28px 24px}
+.a8-flow-num{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.25em;color:#FF8B8B;margin-bottom:14px;font-weight:500}
+.a8-flow-title{font-family:'Fraunces',serif;font-size:22px;font-weight:500;font-style:italic;color:var(--ivory);margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid rgba(244,239,230,0.15)}
+.a8-flow-body{font-family:'Inter',sans-serif;font-size:13px;line-height:1.65;color:var(--ivory-warm);opacity:.85;font-weight:300}
+.a8-pullquote{position:relative;z-index:2;margin-top:60px;padding:32px 0 0;border-top:1px solid rgba(244,239,230,0.2);font-family:'Fraunces',serif;font-style:italic;font-weight:300;font-size:clamp(20px,2.5vw,30px);line-height:1.4;color:var(--ivory);max-width:880px}
+.a8-pullquote em{color:#FF8B8B;font-weight:400}
+.a8-pullquote .attr{display:block;margin-top:18px;font-family:'JetBrains Mono',monospace;font-size:10px;font-style:normal;letter-spacing:.2em;text-transform:uppercase;color:var(--ivory-warm);opacity:.5}
+
+/* CONTEXT EDITORIAL */
+.ctx-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+.ctx-body{font-family:'Fraunces',serif;font-size:17px;line-height:1.75;color:var(--navy);font-weight:300}
+.ctx-body p{margin-bottom:18px}
+.ctx-body p:first-child::first-letter{font-family:'Fraunces',serif;font-weight:400;font-size:62px;float:left;line-height:.85;padding:4px 10px 0 0;color:var(--blood-bright);font-style:italic}
+.ctx-body strong{color:var(--blood-bright);font-weight:500;font-style:italic}
+.ctx-pq{font-family:'Fraunces',serif;font-style:italic;font-weight:300;font-size:28px;line-height:1.35;color:var(--navy-deep);padding:32px 0 32px 28px;border-left:3px solid var(--blood-bright)}
+.ctx-pq .attr{display:block;margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:10px;font-style:normal;letter-spacing:.2em;text-transform:uppercase;color:var(--navy);opacity:.55}
+
+/* FINDINGS */
+.finding-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0;margin-top:32px;border:1px solid var(--rule-strong)}
+.fcard{padding:44px 36px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);background:var(--paper)}
+.fcard:nth-child(2n){border-right:none}
+.fcard:nth-last-child(-n+2){border-bottom:none}
+.fcard-type{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;margin-bottom:14px;font-weight:500}
+.fcard.critical .fcard-type{color:var(--blood-bright)}
+.fcard.positive .fcard-type{color:var(--sage)}
+.fcard.action .fcard-type{color:var(--ember)}
+.fcard.gap .fcard-type{color:var(--navy);opacity:.8}
+.fcard h3{font-family:'Fraunces',serif;font-size:26px;font-weight:400;line-height:1.2;color:var(--navy-deep);margin-bottom:14px}
+.fcard h3 em{font-style:italic;font-weight:500}
+.fcard.critical h3 em{color:var(--blood-bright)}
+.fcard.positive h3 em{color:var(--sage)}
+.fcard.action h3 em{color:var(--ember)}
+.fcard p{font-family:'Fraunces',serif;font-size:15px;line-height:1.65;font-weight:300;color:var(--navy)}
+
+/* TIMELINE */
+.tl-list{margin-top:32px;border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule-strong)}
+.tl-entry{display:grid;grid-template-columns:190px 1fr;gap:44px;padding:28px 0;border-bottom:1px solid var(--rule);align-items:start}
+.tl-entry:last-child{border-bottom:none}
+.tl-date{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--blood-bright);font-weight:600;padding-top:3px}
+.tl-body{font-family:'Fraunces',serif;font-size:16px;line-height:1.65;font-weight:300;color:var(--navy)}
+.tl-body strong{font-style:italic;font-weight:500;color:var(--navy-deep)}
+
+/* CLOSING */
+.closing{padding:140px 60px;background:var(--navy-deep);color:var(--ivory);text-align:center;position:relative;overflow:hidden}
+.closing::before{content:'';position:absolute;inset:0;background-image:radial-gradient(ellipse at center,rgba(198,40,40,0.12) 0%,transparent 60%);pointer-events:none}
+
+.closing h2{font-family:'Fraunces',serif;font-weight:200;font-size:clamp(40px,5vw,72px);line-height:1.1;letter-spacing:-0.025em;margin-bottom:28px;font-variation-settings:"opsz" 144;position:relative;z-index:2}
+.closing h2 em{color:#FF8B8B;font-style:italic;font-weight:300}
+.closing p{font-family:'Fraunces',serif;font-size:19px;line-height:1.6;font-weight:300;color:var(--ivory-warm);max-width:720px;margin:0 auto 48px;position:relative;z-index:2}
+.closing-meta{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--ivory-warm);opacity:.5;padding-top:36px;border-top:1px solid rgba(244,239,230,0.15);max-width:500px;margin:0 auto;line-height:2.2;position:relative;z-index:2}
+
+/* DISTRIBUTION SECTION */
+.dist-hero{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;padding:32px 0;margin-bottom:32px}
+.dist-big{font-family:'Fraunces',serif;font-weight:200;font-size:clamp(110px,14vw,200px);line-height:.85;letter-spacing:-0.05em;color:var(--navy-deep);font-variation-settings:"opsz" 144}
+.dist-big em{color:var(--sage);font-style:italic;font-weight:300}
+.dist-cap{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--navy);opacity:.7;margin-top:16px;padding-top:16px;border-top:1px solid var(--rule-strong)}
+.dist-prose{font-family:'Fraunces',serif;font-size:18px;line-height:1.7;font-weight:300;color:var(--navy)}
+.dist-prose strong{color:var(--sage);font-weight:500;font-style:italic}
+.tile.sage .tile-num{color:var(--sage);font-style:italic}
+
+/* RESPONSIVE */
+@media(max-width:1024px){
+  .tile-grid.c5,.hero-bottom{grid-template-columns:repeat(2,1fr)}
+  .tile-grid.c4,.a8-flow{grid-template-columns:repeat(2,1fr)}
+  .ctx-grid,.demo-split,.a8-hero,.dist-hero{grid-template-columns:1fr}
+  .finding-grid{grid-template-columns:1fr}
+  .fcard{border-right:none}
+  .region-row{grid-template-columns:1fr;gap:12px}
+  .rcount{text-align:left;font-size:28px}
+}
+@media(max-width:640px){
+  .top-nav{padding:12px 16px}.nav-links{display:none}
+  .hero,.sec-light,.sec-dim,.sec-dark,.closing{padding-left:24px;padding-right:24px}
+  .tile-grid.c3,.tile-grid.c4,.tile-grid.c5{grid-template-columns:1fr}
+  .a8-flow{grid-template-columns:1fr}
+  .tl-entry{grid-template-columns:1fr;gap:8px}
+}
+@media print{.top-nav{display:none}section{break-inside:avoid}}
+
+</style>
+</head>
+<body>
+
+<nav class="top-nav">
+  <div class="brand">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKgAAACoCAYAAAB0S6W0AABETUlEQVR4nO29d5gc13Wn/d4KnXu6eyIGwCBngCAIEABJACRFiRQpWYmiqECLsry7ksPa2pW96328a6/X+zmsg1ayZVm2lUVlSjJJMSeQBAkiETmHwQwmz3SOFc/3Rw8GAAGK1JKmZoh+n6ee6Z6uulXV9etzwzn3XCUiNGgwWdF+2RfQoMHPoyHQBpOahkAbTGoaAm0wqWkItMGkpiHQBpOahkAbTGoaAm0wqWkItMGkpiHQBpOahkAbTGoaAm0wqWkItMGkpiHQBpOahkAbTGreEgJ13My/SVCrU8ueK9dJC+TGtwZvFm8JgdYs69+kXDOUUhNvDA1cC6zKv8m5Glyat4RAXRWceF3Lli5p4TK1rGTsi61fsZK+5P7F0susskopnwAEI6/vYs8jW7zwWofS+YZ1fhnqrTDlI++4kjAN9fL/F/MFiSeaLvr/pcgVkWSciX3ztZwkQslXPTZT8KW5SXtN57jk8ZZIc1BddHy+UJJEU+z/udy3ClPegg6UXSm7BmMVZDTryOhwZeIXd1acZ4YHJ/7XPzo68XpoOCPZqi1jFRFfh5ECcnIwJ2mrKkXLBmAkzwW/4EwtKyOlYRku1K3dWXGOFpCxIjIwUpEzgwUByGarAtB7ZuiCMgZG8zI4Wree+YqQBRmuIGeyzsR+DXHWMX7ZF/CLkk6n5eTJk+zevZsd+44Qap6FR4Dc6BBNQZOVSxezbvWVsnbdEgXw6FPPyNPPPsNoekxaW1uZOX0G77jhJinkcmzdtovTgyMUKx6dHXMoFLMYgSqz5nRQqZQpFR1ZtmgD8+YukYUL4rTFUIWqx4vbX+DUiR727z8phtFMJJykmE+zbOliUvEorlOlVilJ35nTRCIRyWQy3HXXXXLjpqvVgSNnZM/+fezds4+RXEmS7TMpWw64NosWzGLJotly9VUrmJ6INgTKFBRoS0uLamlpwTAMOTWY46s/eJBwUytiV7j5+g2suGoNs+bNnth//frrKFYq/NM/f4VpHTO4Zv0Gli6aqwBEC8nxHz7Iw48+gWnsRrC56+73cPX6TRw+eogfffEbfOc7W5k/bxnXrF/Dv/+NX5HmVCsz5y2gWHU58OOHyWYUyUQHyViY999+J2tWrUBci0opy+jwIN/61jfZt28f123YxI2brmbFki7la4YcPdrNCw9tpqYOUa45rF29nPd+4L0sWzib6YlgQ5zjTNkqfvXq1aq9rYNE63TMaAsqEGNa11yWrVxAR6s58YCTUVO97aZbWLx0Gddeu4G1K5eofMUVgGuuXqrmzFtBqmU2Le2zUUaURHMny5fO573vew+3veuDJJLTOXVqhJ/e9zjbtndjA4sXXsHGG29i1rwFmKEEvgqBGWbajNnMn6ap5rYwK5dMV2+/YY36sz/7czZt2oQI9I9aArByUae6ctUaIrEUTcnpBKMpZs1bxNp1i1jQGlQZD8lZtanfOXgDmLICBRCl4UoAlzDKCGP70BbmIuvj+2DVXKqVersyETnXofJ8k0LBw7J0IpFWwuEUYwXQFZiBOOlMETMQI1+ocvRYNwbgAvm8he0oQtEE6UIF0UP4ql4hCXBmzJM9h/pk5rSY2rhxIx0dHcxoq1vGXA1JpdqoVB0sWxEINFGt+YiCNEizjkoGQw0ryhSs4s9HoeMTAExQQXiFzrTnebiuj9Ivvl3BIJ5oxTRDDAymSWcqhML1zxzbJZFI4DsQDgWJhMbV74GhwiAhcsUCygyRL1eJxKJkQVqCqAf+9UkZHjjDqmX/jvXr1xMIBCbOmQyhKlZNAmaYqpj4ovDRx++pwflMaQuqmQF80fAlAEpD0y59O0opfN+/5Ge2bVOpVrFsHzMQpqmpmZAJxTL0numh78wpquUM8+dOZ+nieaRABTQIqTBiKUwjSiLZQlv7dKoOnOmHnz51UB555BHOXs7sGUnV2Ra5QHuFQoFgMAjogIHmG7wFRvzecKa0BdU1A8RAlEJdPJQ4QdA0MTQdx3Eu+iwcC2I7FqbhEglFGegf5qGHDtJ75igH9u9kVleKpYuX8o63b2Ld6g4ANBeCWgDlG0SjMUYzOcR3+O53v0tLU4BnHn+Aod4TfPADt77iNXm2g66bqJqOho6IoAn19kHDjE4wpQVq2zagQDREBJFLW8lkGGWapnied9FnhimYASEUNLFtj9GhYYbaAsTCOh/64G0snLecWTNmsnhRK6nAuHQcCGkauBq5XAF0k84Z07l2wwbWXTmbGW1RfvKDb3Dy5HHglkteUyQSwq5Z9QJ9QUldl+fXAb7kRVOJy1quU1qgvu9PWE7xfcR3L7nfaKEmSgmhUIicjSTHhZbzENsp4UsVx62iK2HunFl86IM3k0qBL9CiLrZnqQjKziFezSVghog0xcnn88TjcZJJuOtXb8MujxI2Lv2DAYjHIthOrd40EQUiKB+SxrhmyYkSd8KaDnQPyPS50y87sU7pNmgymUQphYjg+x6ua5MTLmrJZdNpbNsmlUpxVpwASR2lGz665uHaZRy3SlMszLwUKgXKtYr1462clP20lK1zHiGv4mOiUy5XsVwXwzRp62gmYEIS1PWbNrDiimUT1/Dss8/Kzl17J453XRedujAZr94vUJ94qPEaYej0Kdm8eTOF9KXjDN7KTGmBTmttJiA1AlLG8Gsoz8W/uBYnk8thOxZNTVEA8p438aAtp4YyfIJRMIMu+cIIvUVksFqVYKjeszZMH00DPahPlFm0csTiQVoSEcrZUXTl4dsOGjBoIQuWzGfjunUKoLtvUO6972FeOnBs4vh8oYQZCoCyQTmgLrT+mmpR6O0K4NCJHrZs30GmUHyjvropw5QW6KYNV7FxzRwSRg6vPMqxQwd46MFnGSye6w8f7RuSBx99kNVXX0HX7HYAbKc0UUapWkMMYTR/BocsmGUCYQiEgySp97zjWrMK06Jy5+mje7QbS8tTKQ4Q8irEdBermgPA8qBoQ1qQ7SdG5L//xRc5dDrLLe/9EBmvbuEHMznMsElTs04634uHy1j6wvvrGSnKD+9/Uv7zH/1/dC1ZwZy5nZddFT+l26CpWED98R/8jnznR/dz7w+/z6F9e/mJodPb20uquUkcu8LQUD9zZ8/hprffwLRYPQCjLZRQB08fkX998AkeeWQr5UKRZDKC65R55tkniEfhmrVXcv3KlRecb1q8TQ0WKrJ3734efeop0pl+YkEBTRgdOMG93/saRw4sBr3egRvoH2L37n3kc0VuvfldhKLQ01vhRztelC1bNjM4dJpkxxyMgEV/3wl+8pOf8mQkILVqkUq1zMDAAAcOHiQYb2bplasmriNXKksydnn46t8S4XaDRWR0uEz36ZN0d3eTzY4SCgdpTsZYsmQhixctYFqi7pkZLVekLRpRg7m0vLT/KL7ZBnqEWCSEWytRLKZpbgqzaP6siYCNbK0qqVBYAeRryMkTpxkZzYKm09I2HVE+6cwQ6B7xpiBmQKNSqXDq1GmSiRY8V7F+/XXMbjLUQBXZt28vAUPHcgVfS1Cu2iQjIVJNYXTPwnNrVKtVxjJpgtEYoVCImTNn0tLcRGvw8hqEmlICHRhJi1urEg4H0TUfT0xGcopIPEUyDkpBpQqW5RIIGETC9R43wGCmJrVaDU0Dw9DQlSB6CFcLIgqsGiQToDyoVVxCpsbIUD/tbW34vo/v+HiuD7pBKBihpble7sAo4gv44hAMKXxlU7PKaFrdcdCVSqnesYqEghHGsjmaE0kKhQLtHU04HpRtMIP1Jqg4NQzlo+HXvV8oUCYzm8Mq6yEp/fISJ0whgR490SNf/dpXwHWIRoN4rkW56tM6bRmFkkepUMR1XQIBEzOg47o2Vq0+PSMeCVOtVahWq0SjYQIBA8e2sT2FbjahmyFKhRzNySS+Z2HXSkzraCeXGUNDoes6ru1Rq1loukk4HMX1hGKhRjjSSq1mEworwhEdz69QrhRAU6SSzRTyNXQ9gKGHKJRLRENRfN9F1xWWV8IPWATD4Ns1cC2COjiujedCNJ5gNF8iEIySbG7l43d9lPbmZlKRi4Oz36pMmTZofSBeeP/73sO8+bNQeJQrFrmSEI40Ew6Hx12aLhp1a6qUYNs20UgEz3OwLAsNv+610TTC0TgV2yMYCFGrlAkGDCrFAtVamenTOrGqNWzbRgMMPYBpmogoLMdD03QCZoSgGaRcBqU5VK0cSrMJhgwqlfqPw9DD6EYQz1U4joftOASDQQxTA8PBo4xuuijPRlcKU0GtVsPxIBJNIEaEZ55/kR07d6Np2gXiLBZyEm969aj/qcyUEGi6UJZgMIjneSxYsADBpljI42GRajXxpJeq49THFnWdgGHiOi41q0I4HCZbcAkGg0TiEeyaRS6Xq4+falEqVplyWVBKoekRzJCHERRqbo5SpUQwGMR2HGxPw5QgjuNQrdmEQiEC4RRjuQq2XSMa0bDsDIGg1IVFEaV0NBWgXK5hGmHC0QAhpfB9D2UoqlULERPPMTAQRAnig650lNKpltIEoj5zZnZy+vRpYpHwBd/LW12cMEUE2tIUVZ7jSbVapVotc+LkYYqFDO2dSbKnhzFDGkoparUarutjGAYB3UAphWmauI6D7/tYloXv+8SjMUwjQF9fATPoU62WMQwD0wyiPIVh1AM3qlULTRlomoZS9THQ+uu6LnrOeGho2LUyra0xKtU0lUoG70it3mRItRIKhRkcGCXWlMLxfDRlUCgVaWlvwbEF3w+hKxNdCZ7lIJ5HLNoEWpCxfI1QrJVEcye2VaVcKkAy+st8FG86U0KgAPl8nkQigVIKz/NYvmIZc+fPQtMUZ51H9b8airp/UqEQFErg/CFfTQAtoZC02G4WdA+lTBQaugqiCOCJR6lsgWgk4jPOxY96efHGXaoigi4+RtCgVhjBDLoMDp5k144XmDNzKStXrmR4YJjimEfUTLL++ut46snNRAM6K5esJp1Oc+jIYWZ3zWLpwgU8s3kzISPE2rVXYlnC089uw3MtwkEDp1YllUq+ad/3ZGHKCLSOD2p8o+4GVBjI2c6t1EOBjJcHWLy8Ijz7XrWogOlK1S6gGyamFsFyfUqlGsFglESsfeLI4UxeRIRpLUml61xEMCKiDIdK6RS2paOpMG5NoRNGJ4ghQQw/gE6wHmAnQXRloIkP2CjloIuDUjoGDjYKlIeuBDW+6WpqdGjfSKaYQM/Hn9gUGoJQr3kVLnkxePUooHq0EOgBE40gFoItOi3JusXMOYjvQSZToFyt0ZSIXXB8vuZLIlSPklZGS32ek4qI5wdQEiYUbEJRQRFAYaAw0dHRxERh1F8jaLhoeCjNR+Gi8NCVQlNS/1zVt58XUvhWZYoK9KwVBY3m/+enpqmEqrmu2BKiyWxXBhA065/tPV2UZ57dxrYXd9HXP8jIyAi6oZjROU2uWr2SW25+OzetmXnRuQPhJpQWJF8sEghGEKkHs0DdcNdf+xOjEvUf2VnL6E+MPihVb5LI+fteKtDgLc4UFKict73+yw8ZLapQdqRpXJjP7MnLww8/w46XDtLXn6ZcsvF80PUONEMxdqjEnkPP8uiTR5k/p0M+/ak7WLd6BonxQXRPgTINcqUiLhY+DoKLLw6+WAg2vjgINoKDr84PydMABZpeH1XQNEQ8RHyU+EyVMes3kikk0EvFtbxyvOUvQnvUVAMV5LnnjvHDHz/MM8/upFiCZMt0oAlPKUQz0DXB1Q2sapHuvjxj2QzFL3yRz37mbt65diljVlbKrkUgGkL3PJQheMrBVxYoG1E2nrJAs5F6g2L8LhQ+qj6narwan4hzHbeeIoLQsKBTgPM6Ser1P7C81PtYLx04zJe/8c/s2n0MTU/QPL2deLyJXL6K5wmu2CjPxwjqxMIJUC6uFHjmxWdo69TpmPFpWTW9S/UZIr7mEg6Z6AENNBfRXdBtlO6idBsldv2vdvb6x398Uo+pV+j4423Ol2+XG1Mm3E7QAA2Z6MFrKAF5nekQEwo1WqqxecsWjp48STyRoq2zk5pj0zc8iKscjCCYIUHpLr5y8TUXx3eoWBax5mls3rKD3XsPARANGpSLGexKGa9WRVM+SvmIMhGl1y2kptA0NW4sz91P3V7UH4lSClEuSq+PvaLpJKOX3/SPKSPQej9Xx1c+SvPR0TCUieL1e1Ny+RI7dh4gmeqkXIZCwQUtRCgWxRUH2y+DYRGOgtIsyuUiTs0hHGwGvRVHmtm65TAAWq1CQheioqNjokndSeD4QVxiKD2C0sLohNEwEFzMgAai4bmgayFAx3GrKM0F5eB4NpoeZiRTvewaoVOmihcMRGnUR919lGjgG3CJMclfFNvyqZVtcmMlIuEEgUgTmg22eEQiJlW7QKVaxlKCqQeIRCIYYoKmqJYLhAydluZpAPhWDcN3CaCBZeO7Dp7n4bkarqvhegrP8/Fc8FxBox69BHWRKt8A0ah3As82ZXwQbWLu/OXElLGg/5aEgyGmd0yjVqmiBKrlCuJ54IFtO2joBI0AulbfNM3AdX3KxRKRYACrWqI5GQdA0/XxOVI+nN/BEa/uSPCl3iPHuyx75b8oDYECbakmliyYj0HdW6N5gqkbeI6NU7MwNZNQMIZpBusdJqfuHDBNnUjEQFMOLc1NAITCARzPxXYdMOp+fEPTMJQ2HmVVj6TSUa+YaKLBOaZMFf9vycwIatH8+ZKKx7BFULoQCBrUahAIhgCwbRfbtlGiEQgYBAIBNENRyvUwd1Yny5ctAsD1fRxPIHiuw3N2IOlsde5LfXC+Ic9XZ2p/R29gn3b9mtVcc81qArrP6Eg/pdwoAVMjoOu4toNdszAMg1A4AL5LoZglPTZMKKRxy03Xs35xhwKo1Kr4mo5hBhEPPAHxAM+ve4LEA98/1wxo8HNpWNBxls0Jqo9+6P2i6QGeem4nVauCbmp4noMvLmZAJxwOIp5DxasRDBkk4yne++7ruP09N06Uo/Qgohm4GCgjiMKse4VQ6Eqho5DxMU65DMc1f1GmtkC1N2ZccCRblvZUVN26aa7SAh+QSFOC57ftY2AkgxGMEjBA18H1LMqFPLqhWLpsEdetX8WnPnETc6OorIu4do5IPIGvgpRtgWAYTQ+gawa6rmNoOrquIejoen1r8POZMlX82UDhC7wp7utfFSNfKEl76twU3pbWJlrb4uQKw+TyoyAOllUhGg1RyI2Bckimoly97gre//6bCIfGr0+BboQoVT3McIJgrBnH0fCUgSfaxCQ6z3FRSjBN8zVV8Ze7J2lqW9BfgHyxIIn4xSt+nF2soHsoLY899Sxf+9YPeGn/cRYuXc0HPvAeTp0eZN/+g+QLBl1dM2hKRDl+4hBf/dqXee7pB7hp3So2rFstV69ZRWc8pPoJStkCQzOw/QC+mIgy6gEg4z8y1xMs18FH3qBogrcul41ALyVOgMGxgjz0yCNs27WLhx59Al8P87GP38WnfuM/oQIaX/jCd+kfHCWbzdLW1sJHP3wnS5ctYO/ebWx56lF+fO+9fPfrX2fRksV8/O47ZMWqGUQSHSgVIxRtxlcmKBPf0/A9QRQ4nofjenXX59SpxH4pXDYCfTl9Y5YcOXKEb3/727y4fRulSoXFy1fwyU/9Frfeup6qwHd/sJcnnngKwSAQCHPyRA/bt+9k06YlfPzODXz8zg107x/h+Wc284N7/5Xf+69/xNIrpnH1miu47uobSBcsPAIoPYjj+dQsZzzoX8dFoRmNNuircdkJNGMjJ08N8dOf3s8D991Pd3cPa9as4V2/chsfvfvDxGKw/0SVL/3Tt3jm2Z1oKkgwFCMcjpLJDvHkE5vx3Cp3fPA23n7NTGZ2tvMH//FOdcutt8vX7/kKP7zvq+w9eBi7GuHateuoWKCbIQw9hO8LonQ00xgPrdPqAUwNXpHLSqAHerPywIOP8MDPHuF0dy+6MvnsZ/+Q2++4k67ZOqM5uOeHj7Fl2y5efHEf6DGamprJZcsUC1lMI0CxlOO5zc9y7PBuNq+9kj/5vU+Ts5CuWQaf+s3fYPqCDr72tX/kxz99iPTwIO+5eSlB5dLSEkEzDJSuoZSBj4Z3cabIBi/jshDowd4R2fLidp56+jm2bNmObfvc/M5bueMDd7Lx2vnkcnD/A/v54U9+xHNbX0TMMNFYG0KYsdE8wVAT0XAY0xA8t0YwoNHfP8iz1TIf2LKTj3/sbm57/yamdcDH7voAqZYWvvu17/PIo0+he/1ctWwOM1pnoevmxDXVA5Ab7c9X4y0v0AO9WfnOPT/mW9/4JplsmhtvvJ477/o4G2+4kVQKnnuuzOf+799x6OgB9JBG66x5FIplIokkhaJNrKkJ1xKKhTKRcADPVfiYVCyNXEkYzub58ld/zINP7+KWd23iIx9Zw+23XU9xaIxKpo+nNu8mHm5m1UoDW+k44iPiovz6NLoGP58pI9DzI38mxgSNiwfqq+UhCUenqQy2QIBnth7nH774I+a1t/I//9PvcP2Nq2mfMxcVgYeeG+b3/8vnyZY8jHAHsYRBRbPIeTmK+WHak9MojGaIh5vRDJNKucL0GXPoHzlDINpB2TNIzZjDyYEhetOHyRT6Wbe2hRnTY/z+J29XUVPk7z//LfYcqNI2o5s1G68hUy2RimiENYOaqwgoE8/z6gEkuo7neROpeTzPQ78gIuryaxJMGYG+VsLREEV3WJTRwaEzGf75K/fQ2tLJf/vPn+Yjn7h+QtBHMyKPPfE0hZpPIJrC9vMMj2YwYj6x5mZ0H8rVEuFwCA0BVc84V63Zde9QUEPEJFOyMePNUHPI5qr0nu5j6fw1ALzn3bfSfaLC177xbeZ0j5IpOehmDMMUxPUoZfO/tO9pqvAWbAQlle3U23rPbH6ewaEerr1uNRtvWH/BXoNDGV566SU0qRHQbUzlEokHiISDmLqB6zgo0TCMAJ7noZTCMDUcu4amfEQcXL+M7Q2RSAimEWZsuMaenb0kCKsRqyAzU1H18V+/k6Ur5rN95x4ef/QFdKOZSlXH1xShqMEbNfHvrcpbUKDQEm5WvYMlnn7yWWIRkxtvWk+sOXjBPi/tOcjxYycJmT4hw0bXagQ0H6tcxrNq+I6HoZmIKziWjaE0gsEgnl+f7GbZFURVcLxhXD9DLBZDI8HW509wqNcV3YiQxZYrZgXV7/6nT2NbLt/7/v34bgLbDeLgE4oHXzbtuMHLeUsKFOD5zbvYt/sAXbPauf7G1SSbzvVI+vPI1q27icViBHQLzx7Fq2VQbgUrl0b5QigQRhOF74HnybgVlXp6R13QdJ85czpYsqwF1x/GcxwS8RkcPZjhgftepEU3VIqA6req8o53rOJ973s/J44NcuTIEOFIJ1Xboziev7TBKzPlBeo4eanZ2Qt6D2dGkKefehHfgXe+8wYWd1y4DOHBQyMcPnKStpYUoYBLIX2a1kSQ97zrZlZcsQIdRblQQUNHV/WoI8excF0bX2w0zSccCbD+mpX8589+gqWLpzE81Ie4Br4f4/ktB+gtIjlcMQP1zFF33303He0z+dnPnqZUUmihGLYvjYH6V2HKCxR8DOPcbeSqyP0PPMvBfcdYuXQF12+4mjz2hIAzFrJr92EGB4ZJjw2jeUXmz27jox9+N5/65F0smDMLsV3E8fHcunrqiWsFob4cjS8u4rksXTqPW9au5cMfuo1UIkS1WiQeT9F9epAHH3yWYtWiXUWUD8xf0MQ73vEO+s6MsHP3EaLxDjCjyFuvn/qGMuUFapopZWgJVXbHBMD24LGnniOXLnDVypVsXDpfOd659WNOnbZ4fut2FJCIhqiVM/zKu67nNz99B10z4dTxE2iiMa2jk2qpiuv69SEgQ2EGFKZp4Dg2lWqJeCSCj82tN1/P1WuXoJs2rm8xMDTC00+9gKZHGHSL0gzKrsEtt9zEnLnz2bf/CMpMUKlp9YwiDV6RKS/QYr5fAKJGqwJ46LEdbN+xi0UL5vHud74DYDzFIYw5yIFDhzl9+hT4Hp5d5sMfei+fvPtjhHQ4cSRLsVjEth0cRxCpj7lWKhUMQ8euVkA8dBRN0Rj5sSxhAjSh8/G7fgVNz4FeAuWxc8c+nnjkOcJGfbbn9DjqiitnMWvWTMqWyxNPbyfa1EkgEEFEcMaT7J5PY1LdW0Cg8cS55LLHRgvyyONPAD6rrlzG266pL3wVNgwyTkFs2yWdHqVYylHMDbPuquV89CO3s7A1rnTg9OnTVEtVHMcD0YjGEwBoWn3T9bMJveozOwu5MgpwPIdFCzrYsHEpQ8NHCUfryzQ+/NCTAIw5FQHoiKFWrFpBtWKz9YV9jI5U8OXiR3A5Dsi/ElNeoAC5Sl0AW3fuZ+uOnXRMb+Wmm9ZOfB4mpZrNJmXVbB57/CE8t8DNb7uGz37m06xZ0KUAqjU4deo0SjcIBqK4rjth0TRdgfInLJp4gucoMsM52kBprs+qWSH1m795O4uXtVCqDJDODGPVavUIeu/cModvv/EGWlqn8fzWl9h/4Dji10PuLteI+VfjLSFQX4JkQO5/+CnKVo2NN67nuuuWXbRfejTD/n27WLFsLp/5rV9j3dJpKu8ieZBcweHEyR4UJoFQGE+gatXq+cI1wfOcevy756PEQPMNMqNFhkqIX6uvQz9/QSuf/PX3cfXV85k+Pck7btoIvkNL6Fyw9IoVc5g/bxH9AyPsO3DkXO7Q8wR6ubo1L8VbogvZHNXV9544LC+8uJfmjhZu+5W30Ro/1/soj+Ul2ppQsXCMuz52OzfesIGbNy5XuXJNktH6CnTHqp6c7O6jUKwQiETrUzQMGc8yJ/UhJn88aRkGph6mmC6jHOhI1aeNaFLiM7/6bvWe994iYyNZ5s9pp+W8iJB8EfF88FwdzwdP3ImQu7P5QBtcyFtCoL1DvtzznZ/i+QFWrrqC1VcvuODzaGs9qGTJ7KT6/d/7XemI1NN2nxUnQP/gCJlsEcHAVxqKc6t5KE1wvPr6S4jCUAaGCpLLFChmLDpSdS9VqThKe7CJeU2mmtfUTsarSY2KGCgMUioRRz3yWI8cPnSMjo42li5djO8XgAsnBZ5vVS933hI/2TN9I3R3DxONNXPdpo0EgXSpV7CHhHTxgrryrDgrlREByLvIsIvsP3CESs0hEkugNAPf9+t5nJU/MdnNMAwMvb6GEaJTyJbAPZejdF7rfDVGWXqrGRmVkgR0C6jAeKLa/Bjy0INPMTSYYf1161l2xdJ6zqaX0ajiz/GWEKhds2hrbsKzKyxZMJ+i5dESm6V8gtASv6QZikTqK3gkDJTjw4lTJymWKnhKG5/QBqFoAA8H0QSUhmaYiB4ALYAnPvlyid6+gYkyLfLSSlTNCjcrsYrESCjbFQzqWUcGcxY7dm8jEPLYcM1VdLYn6pnt5Kz1PH+O0tnL1saz3Y2/vsyYgnfsn7fVedvG2WrtFbNw84NsfeJZQmcX3QqkXrWOzOFJuphh+64XMYMBUCZV2yEYDVCxSmgmaIaG6AEqNbAcDRvBM6DqV3l+z86JsoI+QFYgJ83BerXfZHSpvkpNAL50z7/QPbqfxctbuP3dGyiN9dXT8moaSml4Xj0djqYZKHQ8r76szkTu+suQqSPQV4n6uXbdFaRiAfZs307fmeprLlZQ9Pb2Ydk+mgqiYWDoIVzXHc/bWV/7XWFi6GFcTweCuOMT4IbS58V0agkFKYXvY6hzq49EIyEe3Tck2/fuJRILsXHTWlpCTao1nhx/AOc/hld6fXkyxb6B80T6skWtrt1wNQsWzmH33t0cOnTwNZfoeRoHdp/CKRkYxFBegLARxqt6KNHQPMGt2WgeBLQgOAqTIGLp6FqM3t4M6cLLZr9p58SZceqfPf7os5w4fobly1bz7ls/UL8bT+fVo0XOJrK9PJliAn0Zci4//fSkoa67bj2OY7Ftx3Z6i69tymStCgf2ncS1NHSCiKehKw3PtTDw0MTB1ADXxtAU+IKuDPA0FCb9Q2nGcq9cfrOJ6h+E7dt3oTyN9WuvYcWcVpUpVsV1zwrv8hXgqzG1Bfqyav+6669h1pzZPPfcc5w43v+aihgbLdB9qg8RHU00xHXQxEWnRkB3aIppzJ7ZgiY1NKlh6vUMyeDjI+RKZU73j/zcczz++GZOnz7F7DmzWL16FQDN8bAKR8yLaoIL760h3KktUMDlXAKxxYvnsXr1ak6c6uaFF7aR59Wt6LHj3QyN5NB0A1+B4OJ6ZUzDQdMrLFjQwXWbVhIMOfhSX9vdlRrKBB8PWxwOnzr2iuUf6a/IQw/fh+1Uufa6NaxZO3/iM8+pjIsdLshJ32CCKSTQ8xaSVef35M890HYTdf31N9LW2skzm59n397RVy11z4FD5IpFMHTQfUS3cf0iRsBCVJ6r1szn5ndeQ6wJPCmgGza2V0IPeHhY+IbNoRP7SMulfwyDw90M9B/HNGzmzO2gw6x3x13SUrPyoNxLHOVf+FqdXS7x8hPvFBLoJRAwqA8l5R1PAFavuorlS5Zz6NARdux46VWLONUzSMUSfC2Ir+qZPzxxUaaPLzUWLJzF6pVzCUV1PGWDIdiejdJ1vHrSeQYGB88Lib6QWCxCvCmK51lUK0V6ikXJS0EUPuHIeCKHxrykV2TKCFTXdQKBAKZpnnMBqnOe2oSpK4D2Npg2rZOx0TSjoz/fgm45cEYOHT9DoqULjyC6EaVaA8cD0wjR2TmDq9eswXJg48brKRYr2I5PqrmNcs1GNBNHdHr6hxkcyNdXrQOKpbEJuXbNmM2crnlYVZsXX9yOrpskVJMCk3K5OjEfvlwuYxj1+9E0jWq1QiBgnPMqXaYinjICdV2HWq2GZVk4joPjOLhWDdvOXGC7jh3Ncaa3h65Z05k/Z/bPLfN0zwC9vSPYrg5E8PwA4hs0RZqxKh7XXbOJ9liEJhNWLr+KluYOFCalUg3xDcQzcCyNctFlcCCDP15bx2OtE2NH06Kamj1rMZFwilLOor+n3qHSSapAMI5lWQSDQYJBE9uuYTs1gsEgpmlSrb5sPPcyXC9+ygi0HkkkGIZGMGgSCBgYhkYgcOFy3Nuef55jR/ez+qoVXHfdajKVV+4onTjaTSiYIJWYjmnEcKqAaxLW4+h+iLdfdzMBwLZhXtcC2hId6L6JKUFi4RQhswlFiFpV0debecUu2ZyZSwmoBLmMTffJcz3+eKztXA77cUuq6zoYaiIj8+Xem58yAjVNE2N83aFzD6+uzWKhPh46mvdk967nsSpZrlm3gmWzo6o5cmkf4an+rOzZswfHrlApZSnl0ri1CmFdQzkOy+fPZdHsLppBGT7MaA2wsGsmbqWMqfu41QJ2tYTmC7VKlTOne0gFLn2uaW3TCAdjOLaQHh80zRYrYlk2aIparYJlVzFMrZ4a3HFwXZdgMHip4i4rpoxADcOop56pVqnVariuCyJYxUGJN9XX69y18wUOHd7F4kUz2LjhyguOL1d7xZf0hI1LjwwzMtxLyKihSYZ4xCIZdWgKOVQLA2xat5xEqL57RwjVFoMrl81AuaMEKODZw4TNKi3JAEHDY7D/1Cte+/x5XUyf0Uo+P8qp7qMApOIRVShkse3aRDvzbNOlblHB853zSrk8reiUEajgTUzDONthQtcJhupWppBPyxOP/4yx0T42blzNuuWLFYBHWnz6xdRdtPOGdI6fOMzIQC+aSuO7/egyjGv3YVd6Cagxrlszl1kppcrVeocnEUWtWNhMPFTCq/XgVnvQ1SiV6gCVyhDHju1k/5ETl6zkVy7S1Nx5raSzp9m9dwunx+qhfuGoBsqbaHM6joPr2ijDeIVFFi4/kU6ZgGXP89B1RTAYQDc0ypUiuZFBdExC4ZqcPH6ScinDqisXsWLFPPpz3aKpKqGAi+9ZhHSTcq6AYVZkaKjI0SOHaW2NYBserqoS0qN4rk44YNI1bS6ppjKV2mnxrTQuo2JZJi2JCuvXTKdvLEfRU/iaje16tKUSGGaek93bmNFcFkP5NCU7KJYdSm4QVwsxa24TV109l0SzcKJ7O5HwbLH9DNFYkGKxSC6UQ9d1lK9IjwyRLqTH7/zsGOjlyZQRqIbC0Ew0FaZcEE7mB+k+OUJA16jaDlXbY8mSBVzTtp5Uc5xnn3uKWMSkVs6gKY9EPEl6LEc00ko43ML0aa387m//e2ytjOgGSmJYFQ9dKeJRjTO9R+g58QIhs76MoWkmUIEE77x1HRUXgokmsoUiwWCY5lScwdNHUdTYf2gPY0ODpJrbyBZsHC1MIJZkRmeUX7v7g3humbGxAXa9NMzIYC+JSAunenKUShk8LYEncPj4EGP5NK4fQ5MoSHD8O2hY0ElLSAXIDOeYPW2Jil0zTUqFMmZA4VNGlIevYK2oc8FBakHdjah8tLMGSDRABzFYtHg5vvLHM8wBfhBER0QhOCA10Bw8pwTKR5SOoDH/ChN/fO0jgFgkCL6Huno54rvguixY6iM++KKDbiAoRNM5aw01XBCP5YvXoWv182qiAVp9mXFgAfVAJ0M3GRodo1Kqcv56TpcLU0egAYN4JE5fX05mzkyqlubkm3buKnlR1EfhwyTfdJH0D2YlaAQZGRuV9ta2y0qkU0agtWqZcrHAvT/8AdFoXEQEHw9X7AsHsF8WX6ldlBjh/Pc+vjfeU1YmCgMwxu2chygPlI3o42ORmgIxRHwNMMZD7xwUgpoo9+xku/r7s7lFz07rACY8Qz4eylCAnLPy4yNVZy2pXauQyaTxHBf/vPlP5VJOorE3/8fyZjNlBDprdoe64cZNAqBrJrVaDdsWotEU/vmP6eWC9F7ewbjwc218YdezAlXU/eO+8hFcHK+G0vx66kWlgah6wi/fQMRDFw+UOzGf6OVi9Dw5b877uQsV8REcNNMFzp84d6FAiYZJJhPM7ppVH7kY53IQJ4BqzB5sMJmZMuOgDS6mkM++5a1LQ6BTiHz+wjn+TYlXn7U61bnsBXp+RP5kJ5Goz/HPFwtT5ppfL69boAPDGXlx194LQ966z8izW3cJwO4Dx6S7b0jG8lUByBQt2fbSPjndP1rP7FGuXPRl79yzW46fvLTb8JWwnJw4Xu5Vj8lWzoXn9Y11i0FClbyhi47LVevVZ9GtX6dLToYL3VKRjBzu3ifb926/4JiSXT931asfV5Os2OeJP1sefsVrGxytu1MHR89d20i6/r0MjZbOZYfO1+fXv9LKzQC5fP24fKEqw+mcPPX0c3K2fIDRsXPnGBgZnfRCf90CPXLkCN/5zvfoGzr3MEqlCs9v2crBY6fle9/9AVu3bqM1Ea5PdXB8vv71b3LieD24IhGNXPRlHzp8nMPH6p+fGTrvy82de1i5siMA/YMDAhA0k8rUX0PPVgtPvJzZOlelrVGJ6dMUwED+nIiS4Xr1GTfa1Ei5XwySqqNproqoZrXluRd59pktFxRr1epenrBeP85zwXb9CeGmoh0qXy1eJIi+oVHpbKvHj3a21UMHx7I1aW+JqB/+5FF56ulnyZfrvk7dONeL709f+sfoovj8P/yL7D14iGrNYmhsDE03yZbqBqKttX6OdKEs09vrY6rp0ivNB/jl87qHmZpb28gXy4SisYn/tbZPY/Gy5SxfNEclW1pFxodg0iVX2pvDqly1JBCO0DOUk2PHjpDNZslms6RSKe58321q8dKVE6FmPgZ/+8WviKZp3HbbbbQlY7x08KT09PRQLZXFtT1WrVwpK1fOmxDn0FhNDh06RNWyOHr0OPMXLuB977xOAZw6lWHv3r3S09PD7R98L1cunKG27Nkj0UgTVy2ql/HYs7tlxRVLOXx4PydPHaO5pYk1V/kyd1o9l2i5AtWaRraCHDp4mG3btmFoiiXLl8gtN6xXAFEzpTLVivSd7iNbOCHbt25n5qw5bLruepk5LaYOHB6R5557mraOJt72thuku7ubbdt2UCyUueOOO2lNhXhq8zNUKjWuuPIqZs3qlC0vbGP3vt2yZs0arrlmHQAD6ao89NBD+L7PzJkz6erq4smnn8EIhGjr6KSjs4uO5oTKVlz58YOPyJEjR1ixYgU33HADw7mK7Nr9EpVKDd/3xbFqXHvttcybMXmcAa/bgo4MjxEIhLAsa+J/oVCE9evXkymL5HI5QqEIAC0xQwFEIjEcx2HfgYP8n7/+HMdP9VAoW/zkvgd54oU98vyL2zl09Di7DvfI//7zv8QVRbZQ4pv3fJdndx6S+x98mO/98F6GxnI8vXkr3/jmDzl56px1yhdcvvSP3+Rb37qXQCDJffc9zj33PifbDozIP/3zPQyPlTFDKT73hX9mz6lR+cm/Ps5jT7wIwNZ9Q/KDex9kz76TfO9797Fnz1F0PUo42kze8WSsbEsg2EQ4lGRsrMQ99/yEaLSNiqX4+td/wI79p+tVrI00hyPqgYef5C//8vMEwy0cOHCKL/z9Vzl0oiR/9Tdf4uixPsoVlyee2syXv/zP4ysgK/7hH7/Miy+dkHyhMuEu/eI/fpUHHn6Ypcuu4KlntvBXn/s8/QVH/vpzn2f/oSNYrs/9Dz7Io088QcVysFyfTL7A/Q8+xO5jp+XH993Hw489SSzRzAvbdvLFf/xnBkZG+Ku/+hsOHjzImTNnePDhR3j44UcnnmO+8su3rK/bghrBAKFwBE03GCuJtMaUak+YCkxyNcR2XArF0sT+g1lbLNvBDASppDNM75rHJz75KWIxjf4/GSVfrDKazqP0IEo/jWaE+IPf+XdqsIj89V//DUMjGWq2z6rVV/PZ3/q42n1gSL7/ne9jmEEGx5DOVlQ0FqMpkeKuj/8qV61ZQKqjgz179uBoGkYozH/49IewXfjSl77Ntu37aG2bjRmMMFxFYrFWgsE4kWiKaLyV6zasYeWqVUyLj/vBTR3LdkTQiDfFuOtXf51yuUJoqJ9Dh48zOppnuIB0NKGG8oimhZi/YBm/++kPq1MDnvyvP/kz8nkL3Yiy8Ya3c8d7Vqmvf/+n0tHZxd2fuJtazed//vH/Ipcvs+mGGzl29DhNyRYOHj7G8iuW0zVnAZu3PE/30W6ef2E7luNx1113seHKuWr7oWtF0zTO9A+ydPkVtHd2MjQ6iusrjp3o5oa3vZ2Pv/9W9eT2ffL9738fUTrJVAvv/8AHmTVrJlWrVk/aO04iEvilW9LXLdBQKEQul0NEMIxz95Orx+Eyffp0stnsBcd4nkc8HiebLzCtcyahqEalChXLJxiKEk+14HowMDLGosX1TMmRKNRcj5HRDFXHZVFnFwC6qdPTdxojqNPZOu6G0YRiOUcwYtIcQsWTUckW0mRyaURzMQNgBsB2LU6e7kZE0RGM0hFGnaxWJFcs4XgejmcTTzSRSMUv/NIMHdu2KFUtntz8NMVCCTOgkS3kKVUrdIwvGhaKgmYaLF62lHQNmTddV4FwSA4fO0pHZyeVWl0MPT1naG1rxxPQDY1ILM6Jk6fQzACLly2nUCrT29fPzLmzued732Pm7HmsXX8doUiMQqXGomVzAejsmkWtXKNUszACQXKlMrF4iqrj0j8wxC3vuo2sh7R1duL5wslT3bS0txOPx0kFUZFwTFzHIm8jvuuSihi/dIG+7ire9yEYDDM0NIIIZKv1Bn0yhEqFUSKKvr4BjvVmpT9ty7ZtOzCMACKKasWiUChRteozKY1AkFyhQqlsYQRCzJ23gD37DnB8zJfungL9A4NMnzmLpkSSTD7PmRyimy5GwMGnfO6aqKAFXY6e3AfAs1seZd6i6axeu4x0rp+DJ/spudAzcIx1160h0hRgND3EoIWcPH0cyymjB3xEcymUs7SOz2UfdSuSxxMMh1ItzdHj+9j64tN85rOf4iN3fRDLKZNsqbfFjw6lJWmg9ICwbedzjGbyPLzlgJghmLdwFsNjfbR3tDBcQJYuW87ho0eo1VyqVYd0LsuS5SvwfBgdy1CzXZatWMnVa9fz3//HZ3n3e96LppvMnjOX4ZExes9k6M6K/Ov9D/Dijh3oZoCq5eD5UK5axOIJmpLNHDt+EjTYu+8Aji8sX3kFhmGQyecZLfsC9ZkLiQBqMogT3gAL6lo18D3+7gufo6OjAxFh+fLl8omPvFcBfOD97+bzn/88f/xH/41UqoWhoSFuvfVWVi/rUj093RIJB+iKoTIOkopHMHWhNRln1szpLF04n5nTp/E//tt/ZebMmSxbuoRlSxaye89O2pqbiYQh7ZYJRYRSJQ00kbMd8aSC71Z48omH2LN7hwiwaeO7SCajLF48m+9++ysUCgVmz5jO0kWziYVM/u7vvsjf/m2VSqmMaTpYlTSRsCIRO9dzNhUk0FXA0KQpEmH6tBY6pzXz93//eSKhAPG4ST4zCFzB4mkt6uwxhw4c5Iff/Q79g8MsXbSc5ctn0t4SwbbydDShNlyzTrZu2cJf/tn/plgqM7trNiuWLWSgr4dtz+9nw3XrePuNG3jgpz9m63PP0D80yOorV3HzTddy5wffy+f/9q+YNq2dgYEBPvWpT9GajPPwg/dx9913k4iHaUk0cecdt/M3f/M3DJ7po6f7NHfc8QGscgWnViMeDtIW1VQkaEh///DrlcQbyuv2xY+O5aVWrS9sZdsWuq4Tj0dpSjWRiNZzt5/q7ZFiucTQ0AgLFy5k3syZCmA4XxKFTnsirLIVXxzHoVQqYZomXe1Naihfk7oF7qNcLnPV6pUkTNThnhGJRiLMaoupbK0oqVBcpUtpaYm1qNFSXmo1m7/48//Dhg0b6Zo5m0VLFhMIBGgOG2q4WJa9e/eQTCbpmj2LznhcZSxHTp48SaFQYP68eXiey/zOaap7ZECakyk8z6M5HJuwKNlSVarlKtM7mtXh430yPDZMa3OSaTM6wXdpbaqPU+aqnvzLl79KrlDkV277FXwFG9YuVpmyiGvX570no0EFcKZ3UHp6ejACAa5Zv1oB9A9lpbe3j2QyydJFXWrfoW7p7+9n/qKFxMIRprfXB+5f2PGSVKtVFi5cyKzOdnWst1/S2QwdHR3UqjYdHR20REy172iPZMfSdM2cybzZ7SqTr4mIR0uy3r4eHcuIUorWlknkoTo7YWuybmPZkrzSZ7lKRUSEwWzvBfv0j47Kf/3DP5IXd+19xWMvea5C7hfa/7Vsf/mXX5Sv/MsPfuFys+k3/lqm4vZLO3G6UH7DH0C2lJFcISsiwo6dey4qP1eqyujYa3vwmWL6gv2y2fRrOu6ic2Ys6T197th8rnZBOcVSduJ9JjM28Xp4ePiC/dL5wkXnzxZf+cf7VtnetHC7XKkoydil88W/GmPprLy82slmipJqjquh0T6Z1jbz55aby1ckmbjYYwWQL1mSiAXPLRVTrsjLvVulck5i0X/7+MtcIS3Jppafe568bUkiELxon5xVkWTw0vc4lXnTgkUuJc6jJwdkNHex++/ltLakVCaTk3y2IKPDY9J/ZkBSzfXyzoqzUHrloI+z4tzy/DZ5YesOSWfOBVucFedIujQ+vfjcQz5b5msVp1199ViAs5TydRduvpSWwbG6u/asOHuH+gRgx4F6jMOhnpMT5frjBiVjXziI/nJx5r26KzjnVH/pg+2vh19qNNPDjz3O1h27Jt4P54uSGV9w4CzZcf/7d+75Hrte2sP+/Qe5774HLiinf3hEmmKJCx5QrnjhA3xmyw6557s/4ODhY1iOe9HngeA5V+1ItiwA55c5mh571QcdCCdVdTzI5NWIJer+90SsRXW2Tp84z32PPSxf+NKXeOnIYXlxx06ODfTJAz97iMdeeEEGy2Xxtbrb2PXHheqKpN2Lq0FP6eR8X5JmPQYib5cv2KdafO0/pl8mb/qUj+6ejGQyOVxP2LvnAMn2VgCODI7J4YOHiIbDzJs3TxZ0tqhc1ZNUMqbShZocPn6clrY2Zs3sIt6UAGBgICMvbN9BtCmOMqIyvSWq+kbLUilXGRoaYnh4WFasWMHS+R1q6/bdlGse17/tFqZ3NKst2w/J4PCItLVOZ/6CRXS1oXYdGhTDhGw2zUvVitx6wzoFcLi7VwYHBxE5IXNnzWVeV4fqHUzL4GA/tVKZ1tYUy5ctUQDh8LmmyN59h+TQweNEwnE2bNhEa5up9uw5IjNmTqOtNan6hvtlOJ1jzbLl9V6/64rjKqpVj9VLlqpcqSKurzM8muOl3QdRRphIJMKiRYukPRRUJzNl6T5xCj0QpFwuy5VXXkEoZHDkyHGUJmTHRuloaZZFCxeQDFw4IzQcnxpTRt50gd5zzz2cPt3LzK659A8MEYsn2X6yT372s59RLBaJR2Ns37WHOz74QVkyox55Y/uKeYuW4vganV1z2LhpvcpmLfn6t79LsWrR0trOM89t584775R9+/bxyCOPsGzZMoaHh9m6fRfvete75NjJ06RzRfYfOspjT26WnTt3smTZFdzz/Qf42Md+lQUL5smf/5/P0d7RTCwW5cTxo6AHZPGShXz9m98jHo+zf/9+1q5dy+233y7f+Pq30HWdarnEtPZmypYt665aWRdapSRbX9jBvT+6j+XLV9Jzeh9DY3lWr14lP7r3J3z0Y3fQ1prkgYcfY3Qsy5plywFIGoYKR5qkXLbYfaJX7vvXh/nEJ38NlMnefQfpPn2GUrXCDTfcwNq1a+Xxx57m4MEjtLa2MpZOE4unqNVqfPnLX2Le3NngufSc7uYzv/0bXL921Zv9qN8Q3tQq/tkte2R0dJQ//dM/5dd+7dfo6ppNplBmz8FjnOoZ5MMf+zWuXreRxzY/y6kz9QWyxmwkFA3S2z+ImAHmz6kvivWzx56gd2CId77rfWx6+zs5cOwU+46cIF2sUrQ8fvf3P8V/+O3P0D+WxozF2fj2d3Dd227i2hs2smzV1fz6b/xHbnzHO5kxZx6nzvRTqDrYovPJT/02v/PZ32XuoiWcPNPPA488TrZs8enf+S3+6H//BeFECw89sZkzQ2Ncs+kG3v/BD3HwWDdbttebKumaLclITMVb2rnrk7/OHR+9m1T7dE729lF1fYYzeQrV+spzkVgKTQtzJn2unVgu2UQjSXQtxPBQBsRkdCTHooUr+Is//1N+9a5fZ9uLu4lGUsyds4jf+Y+/x7tuvZ1K2efIoW5MI0I2U+L977uDz/3JH6grVqzi0MHjwLl40qnEm2pBR8eG8X2fGZ31Bn04GhHX89m3ay/lSpXPf+HvSCWT3HjTzVSqFmfKSFcUNeYiygygnRcPWalZjIym+co3vk0wFGH+giW4nsJH8fabbyGTg0SqiVg8wejYGJbt0numnxkx1JZMVnbu3Eky1UI6l0cLjBCNJ1CGSbK5iXgMQpEoNcsmGAzQMX0GI2MlruhKqul3vU8efngLB44c5dHHn6aQy5BIpYg1JQFoCdUDLMpVm5/+5AF87wEKhRKJphRNqVY6OmcSiSVI20iuUCKfLxAK1GNUszXErjrUqjaxcBPhcJRCrkhLqpXFCxej69CaaiE9MsbI4CiGEeALf/t3LFq6hP4z/fiuEI820TVjFjNnzGaojOiYE9FkzYnQlKjWz+dNFWg0GiYWDzOatsQHdAWxSJRp7R10dkzjE5/4KKkoPPP8AWZM76QrisqBWBb1+FBNJtYdMgI6oWiEv/2r/4VuwqnuLE1NTTzzzNMMDw+SSkDNgkq5yIL586iUy4SCJmMu8vSTT3DVVVex6fqbKJS+h6ARjpi4rkWpXKOtOYRpmnieRyAQoFwpsmJ6TA3UkPvvf4TR0VHmzZ3PZz7zGeYklXp82wFJpRLkQWo1j1KpwuNPPMX8BYv4L7/xEfX5r/xMdu3aTblSY3B4hKpl0xJA+T6iBNrGV2ZOhVAtzc0SCYXxHBdxPVqSKTzbwbMdxIPR4RG6ZsykWq7wg+9+j9/41G8zrXM6wwODxKNRirk8mkA0DB0RVKlUEtu238zH/Ibypgq0ra0F33f5+jf+hWrN5djxQ6y/fgMrly/hRz+8l69/pYZrO/T0dPM//vAPAUiCytUq4jo1PLtK83jgxorli6S3t5e//Iu/Zdbs+Rw+dIgPfuh2rHKBUyeOktJQx/JFCepCqZChnE8TjwaoFFxKxTQDZ06zefOj9HYfIxKNc6bnBDNntOLbZXL5IOJblEs13veeW3n4wZ/yx//3n6S/v5+25jbe/e53kx0Z4x//4e9xbUvKlSIf+ciH8V3oCOkqFIiLrsHJE8f43D/9WLZt20E4FKW9rYVoOMQ93/om27fNlR//6EfcdtM76R8sSTgaQSmFa9UImwZ9Z7oJ6FArl/Acmx/f+wNGhgc4duwE69evJ5WIofkOTz3xCLFoE309J1i6aC7NTWFS8QilXJWOSD1vVCwS/nmPZVLzps+L3/7SXunt7UVpJpoRYPWadUSjUU6e7ObQoQMopVhxxXKuXj5P5SxfarUa0xIR9dKhIxKPREk1JzCM+mrEju1z3/1PoLQAc2Z3cfMNV6pTfTkZy46x7ooFaqxsS/fJUzSl4jQnWjhx6iTXrlquDpzskxe2bCUYidDcOo2mZIKZM6czNjbC+qVzFMCLB49LKBxgZud0BgYG2Lp1G4FAgBs23ci8zqTadfC0vPTSS2i6YuXKFSSTTSyc2aHyjiuWZeE6wr33/iuJeCtdXXPwXOHmG5aqfccGZeuLW+ia1UFrczNN4RhLFs6ZqHq7e0dleHiYa9auUIeO9koy1YJt2zz99NMYwQCpZDPXXHMNhqExODjKrl27CQUjGKbGlVdeSSIVZffuPcyePZtUc5IjRw4Ri4S5csm8KVe9A2+Oq7NQykqunJ9wy41mX5u78fxtYKhfcoVLuxvzOX/i/9ncz3ehZnMXuwxFhJztStayJVOpuyJHihde40jutV/zwNiIiAiZonXedYnU3evCSLb4C9+/iJDJVyaOyxXt/6cypto25TKLiJcX3/fRzVePuLEqWTEMDT2QUOmRM9LS3nXBMcVCbiI788+jp/eEzJ61oD6ElMlKsvnCc+fzeUkkEqpYyohj2TS3THtDrdVoekzaWlpfU5npfEFaEq8863Oq8aYJtFjOSfwN8Gc7VlqUUhgvWzzh5VQLYxJuOvdQPSsnevDS53+jfO2Vck4ir7Gc3NiwJFs7JvatlXMSehP8/VONKWdBG1xeXPaZRRpMbhoCbTCpaQi0waSmIdAGk5qGQBtMahoCbTCpaQi0waSmIdAGk5qGQBtMahoCbTCpaQi0waSmIdAGk5qGQBtMahoCbTCpaQi0waSmIdAGk5qGQBtMahoCbTCpaQi0waSmIdAGk5qGQBtMahoCbTCpaQi0waSmIdAGk5qGQBtMahoCbTCpaQi0waSmIdAGk5qGQBtMahoCbTCpaQi0waSmIdAGk5qGQBtMahoCbTCpaQi0waSmIdAGk5qGQBtMahoCbTCpaQi0waTm/wf+PO86uyGo2QAAAABJRU5ErkJggg==" alt="UPEL" style="height:32px;filter:none">
+    <strong>UPEL</strong>
+    <span>· Partner Briefing · March 2 – April 16, 2026</span>
+  </div>
+  <div class="nav-links">
+    <a href="#idp">IDP</a>
+    <a href="#april8">April 8</a>
+    <a href="#protection">Protection</a>
+    <a href="#dist">Distributions</a>
+    <a href="#findings">Findings</a>
+    <span class="urgent">LIVE RESPONSE</span>
+  </div>
+</nav>
+
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-top">
+    
+    <div class="hero-meta">
+      <div><strong>L'Union pour la Protection de l'Enfance au Liban</strong></div>
+      <div>Child Protection · Child Justice Working Group</div>
+      <div>March 2 – April 16, 2026</div>
+    </div>
+  </div>
+  <div class="hero-center">
+    <div class="hero-kicker">Partner Briefing</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(120px,18vw,240px);font-weight:200;line-height:.8;letter-spacing:-0.06em;color:var(--ivory);font-variation-settings:'opsz' 144;margin-bottom:20px;position:relative">327</div><div style="font-family:'Fraunces',serif;font-size:clamp(28px,4vw,48px);font-weight:300;color:#FF8B8B;font-style:italic;letter-spacing:-0.02em;margin-top:8px">children served</div>
+    <h1 style="font-size:clamp(32px,4.5vw,64px)">Since the first day of the war,<br>we have been with <em>every one of them.</em></h1>
+    <p class="hero-lede">Across six governorates — through displacement, court hearings, protection cases and the explosions of April 8 — UPEL's social workers continued to show up. Many were displaced themselves. This is the documented record from March 2 to April 16, 2026.</p>
+  </div>
+  <div class="hero-bottom" style="grid-template-columns:repeat(4,1fr)">
+    <div class="hero-stat"><div class="hero-stat-num">95</div><div class="hero-stat-label">IDP children · one-to-one</div></div>
+    <div class="hero-stat"><div class="hero-stat-num">29</div><div class="hero-stat-label">April 8 emergency cases</div></div>
+    <div class="hero-stat"><div class="hero-stat-num">122</div><div class="hero-stat-label">Children in conflict with law</div></div>
+    <div class="hero-stat"><div class="hero-stat-num">66</div><div class="hero-stat-label">Children in contact with law</div></div>
+  </div>
+  <div class="hero-bottom" style="grid-template-columns:repeat(5,1fr);border-top:none">
+    <div class="hero-stat"><div class="hero-stat-num">15</div><div class="hero-stat-label">New protection files</div></div>
+    <div class="hero-stat"><div class="hero-stat-num">85</div><div class="hero-stat-label">Court hearings attended</div></div>
+    <div class="hero-stat"><div class="hero-stat-num">60</div><div class="hero-stat-label">Protection follow-ups</div></div>
+    <div class="hero-stat"><div class="hero-stat-num">154</div><div class="hero-stat-label">Distributions logged</div></div>
+    <div class="hero-stat"><div class="hero-stat-num">1,688</div><div class="hero-stat-label">People reached · ~650 children</div></div>
+  </div>
+</section>
+
+
+<!-- IDP RESPONSE -->
+<section class="sec-light" id="idp">
+  <div class="wrap">
+    <h2 class="sh">IDP children — one-to-one intervention<br>&amp; <em>social follow-up.</em></h2>
+    <p class="ssub">95 internally displaced children received individual case management across five governorates — shelter placements, family tracing, phone follow-ups, documentation and basic needs support. These are not protection files; these are IDP children served through direct field intervention since March 2.</p>
+    <div class="tile-grid c5">
+      <div class="tile"><div class="tile-num">95</div><div class="tile-label">IDP Children</div><div class="tile-sub">Individual interventions</div></div>
+      <div class="tile alert"><div class="tile-num">16</div><div class="tile-label">Unaccompanied Minors</div><div class="tile-sub">Full period · March 2 – April 16</div></div>
+      <div class="tile"><div class="tile-num">53</div><div class="tile-label">Phone Follow-ups</div><div class="tile-sub">Checking addresses, wellbeing</div></div>
+      <div class="tile"><div class="tile-num">20</div><div class="tile-label">Shelter Placements</div><div class="tile-sub">Emergency accommodation</div></div>
+      <div class="tile positive"><div class="tile-num">11</div><div class="tile-label">Family Tracing</div><div class="tile-sub">Reunification achieved</div></div>
+    </div>
+    <div class="tile-grid c4" style="margin-top:-1px">
+      <div class="tile"><div class="tile-num">16</div><div class="tile-label">Documentation</div><div class="tile-sub">IDs, birth certs, UNHCR</div></div>
+      <div class="tile"><div class="tile-num">11</div><div class="tile-label">Basic Needs</div><div class="tile-sub">Food, diapers, hygiene</div></div>
+      <div class="tile"><div class="tile-num">7</div><div class="tile-label">Legal Support</div><div class="tile-sub">Court hearings, custody</div></div>
+      <div class="tile"><div class="tile-num">7</div><div class="tile-label">PSS Sessions</div><div class="tile-sub">Psycho-social support</div></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- REGIONS -->
+<section class="sec-dim" id="regions">
+  <div class="wrap">
+    <h2 class="sh">Five governorates,<br><em>one field.</em></h2>
+    <p class="ssub">IDP case distribution across UPEL's regional teams. Mount Lebanon absorbed the heaviest caseload — both as an evacuation destination and as the primary zone of the April 8 response.</p>
+    <div class="region-grid">
+      <div class="region-row featured"><div class="rname">Mount Lebanon<span class="rname-sub">Primary response zone</span></div><div class="rbar-wrap"><div class="rbar" data-width="100"><span class="rbar-label">49.5%</span></div></div><div class="rcount">47</div></div>
+      <div class="region-row"><div class="rname">Beirut<span class="rname-sub">Capital · central displacement</span></div><div class="rbar-wrap"><div class="rbar" data-width="36"><span class="rbar-label">17.9%</span></div></div><div class="rcount">17</div></div>
+      <div class="region-row"><div class="rname">Nabatieh<span class="rname-sub">Southern frontline</span></div><div class="rbar-wrap"><div class="rbar" data-width="28"><span class="rbar-label">13.7%</span></div></div><div class="rcount">13</div></div>
+      <div class="region-row"><div class="rname">Bekaa<span class="rname-sub">Eastern corridor</span></div><div class="rbar-wrap"><div class="rbar" data-width="21"><span class="rbar-label">10.5%</span></div></div><div class="rcount">10</div></div>
+      <div class="region-row"><div class="rname">South Lebanon<span class="rname-sub">Frontline governorate</span></div><div class="rbar-wrap"><div class="rbar" data-width="17"><span class="rbar-label">8.4%</span></div></div><div class="rcount">8</div></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- APRIL 8 -->
+<section class="sec-dark" id="april8">
+  <div class="wrap">
+    <div class="a8-hero">
+      <div class="a8-date"><span class="month">08 · 04 · 2026</span>April<br><span class="eight">eighth.</span></div>
+      <div class="a8-intro">On April 8, 2026, a devastating explosion struck, causing mass casualties and widespread displacement. UPEL immediately activated its child protection emergency response protocol, deploying staff across two governorates to identify, document, and protect affected children. Within the first 72 hours, the team managed <em>29 child protection cases</em> spanning family tracing, casualty documentation, and psychosocial support. Later that afternoon, <em>a second explosion</em> hit. Our social workers — many displaced themselves — continued working through both blasts.</div>
+    </div>
+
+    <div style="position:relative;z-index:2;margin-bottom:48px">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:#FF8B8B;margin-bottom:16px;font-weight:500">29 total cases — here is how they break down</div>
+      <div class="tile-grid c3" style="border-color:rgba(244,239,230,0.2)">
+        <div class="tile alert"><div class="tile-num">19</div><div class="tile-label">Deceased</div><div class="tile-sub">65.5% of 29</div><div class="tile-detail">Of these, 5 remain unidentified.</div></div>
+        <div class="tile"><div class="tile-num">8</div><div class="tile-label">Reunited with Family</div><div class="tile-sub">27.6% of 29</div><div class="tile-detail">Rapid family tracing, including newborns returned to caregivers.</div></div>
+        <div class="tile"><div class="tile-num">2</div><div class="tile-label">Missing / Separated</div><div class="tile-sub">6.9% of 29</div><div class="tile-detail">Two children who lost their mother — under active follow-up.</div></div>
+      </div>
+      <div style="font-family:'Inter',sans-serif;font-size:12px;color:var(--ivory-warm);opacity:.6;margin-top:12px;text-align:right">19 + 8 + 2 = 29 ✓</div>
+    </div>
+
+    <div style="position:relative;z-index:2;margin-bottom:48px">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--ivory-warm);opacity:.7;margin-bottom:16px;font-weight:500">Of the 29 — 13 were unaccompanied &amp; separated children</div>
+      <div class="tile-grid c4" style="border-color:rgba(244,239,230,0.2)">
+        <div class="tile alert"><div class="tile-num">13</div><div class="tile-label">Unaccompanied &amp; Separated</div><div class="tile-sub">Subset of the 29</div><div class="tile-detail">Children found without their primary caregiver.</div></div>
+        <div class="tile"><div class="tile-num">8</div><div class="tile-label">Reunited</div><div class="tile-sub">Of the 13</div><div class="tile-detail">Successfully traced and returned to families.</div></div>
+        <div class="tile alert"><div class="tile-num">5</div><div class="tile-label">Deceased &amp; Unidentified</div><div class="tile-sub">Of the 13</div><div class="tile-detail">Confirmed deceased, still unidentified — pending forensic ID.</div></div>
+        <div class="tile"><div class="tile-num">2</div><div class="tile-label">Lost Mother</div><div class="tile-sub">Under follow-up</div><div class="tile-detail">Children whose mother died in the blast, under active case management.</div></div>
+      </div>
+      <div style="font-family:'Inter',sans-serif;font-size:12px;color:var(--ivory-warm);opacity:.6;margin-top:12px;text-align:right">8 reunited + 5 deceased = 13 ✓</div>
+    </div>
+
+    <div style="position:relative;z-index:2;margin-bottom:16px">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--ivory-warm);opacity:.7;margin-bottom:16px;font-weight:500">Gender &amp; nationality of the 29</div>
+      <div class="tile-grid c3" style="border-color:rgba(244,239,230,0.2)">
+        <div class="tile"><div class="tile-num">18</div><div class="tile-label">Boys</div><div class="tile-sub">62.1%</div></div>
+        <div class="tile"><div class="tile-num">6</div><div class="tile-label">Girls</div><div class="tile-sub">20.7%</div></div>
+        <div class="tile"><div class="tile-num">5</div><div class="tile-label">Unknown / Unidentified</div><div class="tile-sub">17.2%</div></div>
+      </div>
+    </div>
+
+    
+
+    <div style="position:relative;z-index:2;margin-top:48px">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--ivory-warm);opacity:.7;margin-bottom:24px;font-weight:500">Services provided</div>
+      <div class="tile-grid c4" style="border-color:rgba(244,239,230,0.2)">
+        <div class="tile"><div class="tile-num">14</div><div class="tile-label">Documentation</div><div class="tile-detail">Case recording, death certificates, identity verification.</div></div>
+        <div class="tile"><div class="tile-num">8</div><div class="tile-label">Family Tracing</div><div class="tile-detail">Locating families, reunification of separated and unaccompanied children.</div></div>
+        <div class="tile"><div class="tile-num">1</div><div class="tile-label">PSS</div><div class="tile-detail">Psychosocial support sessions for affected children.</div></div>
+        <div class="tile"><div class="tile-num">6</div><div class="tile-label">Other</div><div class="tile-detail">Referrals, emergency phone follow-ups, coordination.</div></div>
+      </div>
+    </div>
+
+    
+
+    
+
+    <div style="position:relative;z-index:2;margin-top:48px">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--ivory-warm);opacity:.7;margin-bottom:24px;font-weight:500">Response timeline</div>
+      <div style="border-top:1px solid rgba(244,239,230,0.2);border-bottom:1px solid rgba(244,239,230,0.2)">
+        <div style="display:grid;grid-template-columns:160px 1fr;gap:32px;padding:20px 0;border-bottom:1px solid rgba(244,239,230,0.1);align-items:start">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:#FF8B8B;font-weight:600">April 8</div>
+          <div style="font-family:'Fraunces',serif;font-size:15px;line-height:1.6;font-weight:300;color:var(--ivory-warm)">Explosions strike — emergency protocol activated immediately.</div>
+        </div>
+        <div style="display:grid;grid-template-columns:160px 1fr;gap:32px;padding:20px 0;border-bottom:1px solid rgba(244,239,230,0.1);align-items:start">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:#FF8B8B;font-weight:600">April 8–10</div>
+          <div style="font-family:'Fraunces',serif;font-size:15px;line-height:1.6;font-weight:300;color:var(--ivory-warm)">Field teams deployed to blast sites — 20 cases documented in Mount Lebanon.</div>
+        </div>
+        <div style="display:grid;grid-template-columns:160px 1fr;gap:32px;padding:20px 0;border-bottom:1px solid rgba(244,239,230,0.1);align-items:start">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:#FF8B8B;font-weight:600">April 9–11</div>
+          <div style="font-family:'Fraunces',serif;font-size:15px;line-height:1.6;font-weight:300;color:var(--ivory-warm)">Family tracing operations launched — 9 unaccompanied minors identified.</div>
+        </div>
+        <div style="display:grid;grid-template-columns:160px 1fr;gap:32px;padding:20px 0;align-items:start">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:#FF8B8B;font-weight:600">April 10–12</div>
+          <div style="font-family:'Fraunces',serif;font-size:15px;line-height:1.6;font-weight:300;color:var(--ivory-warm)">8 children reunited with families — 2 children returned to caregivers.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="a8-pullquote">
+      Of the 19 children who passed away, <em>five remain unidentified.</em> The 8 reunited children represent successful rapid family tracing. Two children who lost their mother in the blast remain under <em>active case management.</em>
+      <span class="attr">— UPEL Emergency Response Report · April 2026</span>
+    </div>
+  </div>
+</section>
+
+<!-- DEMOGRAPHICS -->
+<section class="sec-light" id="demographics">
+  <div class="wrap">
+    <h2 class="sh">Who the IDP children <em>were.</em></h2>
+    <p class="ssub">The 95 IDP children tracked — broken down by gender and nationality.</p>
+    <div class="demo-split">
+      <div class="demo-half">
+        <div class="demo-half-title">By Gender</div>
+        <div class="dbar-row"><div class="dbar-label"><span>Girls</span><span class="val">47 · 49.5%</span></div><div class="dbar-track"><div class="dbar-fill alt" data-width="100"></div></div></div>
+        <div class="dbar-row"><div class="dbar-label"><span>Boys</span><span class="val">43 · 45.3%</span></div><div class="dbar-track"><div class="dbar-fill" data-width="91"></div></div></div>
+        <div class="dbar-row"><div class="dbar-label"><span>Unidentified</span><span class="val">5 · 5.3%</span></div><div class="dbar-track"><div class="dbar-fill" data-width="11"></div></div></div>
+      </div>
+      <div class="demo-half">
+        <div class="demo-half-title">By Nationality</div>
+        <div class="dbar-row"><div class="dbar-label"><span>Lebanese</span><span class="val">70 · 73.7%</span></div><div class="dbar-track"><div class="dbar-fill" data-width="100"></div></div></div>
+        <div class="dbar-row"><div class="dbar-label"><span>Palestinian</span><span class="val">8 · 8.4%</span></div><div class="dbar-track"><div class="dbar-fill" data-width="11"></div></div></div>
+        <div class="dbar-row"><div class="dbar-label"><span>Syrian</span><span class="val">6 · 6.3%</span></div><div class="dbar-track"><div class="dbar-fill" data-width="9"></div></div></div>
+        <div class="dbar-row"><div class="dbar-label"><span>Other / Unidentified</span><span class="val">11 · 11.6%</span></div><div class="dbar-track"><div class="dbar-fill alt" data-width="16"></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- DISTRIBUTIONS -->
+<section class="sec-dim sec-sage" id="dist">
+  <div class="wrap">
+    <h2 class="sh">650 children received food &amp; non-food items.<br><em>1,688 people reached.</em></h2>
+    <p class="ssub">UPEL ran 154 distributions across five governorates from March 2 to April 14 — reaching 1,688 people across approximately 300 families. Of these, an estimated 650 are children who directly received food packages, baby formula, diapers, clothing, hygiene kits and other essential supplies.</p>
+
+    <div class="tile-grid c4">
+      <div class="tile sage" style="padding:48px 28px"><div class="tile-num" style="font-size:72px;color:var(--sage)">650</div><div class="tile-label">Children</div><div class="tile-sub">Received food &amp; non-food items</div><div class="tile-detail">Children who directly received food packages, baby formula, diapers, clothing, hygiene kits and other essential supplies.</div></div>
+      <div class="tile sage" style="padding:48px 28px"><div class="tile-num" style="font-size:72px">1,688</div><div class="tile-label">Total People Reached</div><div class="tile-sub">Children + families combined</div><div class="tile-detail">The full count of individuals — children, parents, caregivers — who received at least one form of aid.</div></div>
+      <div class="tile sage" style="padding:48px 28px"><div class="tile-num" style="font-size:72px">~300</div><div class="tile-label">Families</div><div class="tile-sub">Households served</div><div class="tile-detail">Families across collective shelters, non-collective shelters and host communities who received multiple rounds of aid.</div></div>
+      <div class="tile sage" style="padding:48px 28px"><div class="tile-num" style="font-size:72px">154</div><div class="tile-label">Distributions</div><div class="tile-sub">Individual aid drops logged</div><div class="tile-detail">One row per item per family per day — the full supply chain documented in the tracker.</div></div>
+    </div>
+
+    
+
+    <div style="margin-top:48px">
+      <div class="slabel" style="color:var(--sage)">People reached by governorate</div>
+      <div class="tile-grid c5" style="margin-top:16px">
+        <div class="tile sage" style="padding:36px 20px"><div class="tile-num">962</div><div class="tile-label">Mount Lebanon</div><div class="tile-sub">43 distributions · 57%</div></div>
+        <div class="tile sage" style="padding:36px 20px"><div class="tile-num">332</div><div class="tile-label">Beirut</div><div class="tile-sub">41 distributions · 20%</div></div>
+        <div class="tile sage" style="padding:36px 20px"><div class="tile-num">303</div><div class="tile-label">South</div><div class="tile-sub">30 distributions · 18%</div></div>
+        <div class="tile sage" style="padding:36px 20px"><div class="tile-num">61</div><div class="tile-label">Nabatieh</div><div class="tile-sub">25 distributions · 4%</div></div>
+        <div class="tile sage" style="padding:36px 20px"><div class="tile-num">30</div><div class="tile-label">Bekaa</div><div class="tile-sub">15 distributions · 2%</div></div>
+      </div>
+    </div>
+
+    <div style="margin-top:48px">
+      <div class="slabel" style="color:var(--sage)">What was distributed</div>
+      <div class="tile-grid c4" style="margin-top:16px">
+        <div class="tile sage"><div class="tile-num">18</div><div class="tile-label">Food Packages</div><div class="tile-sub">حصة غذائية</div></div>
+        <div class="tile sage"><div class="tile-num">14</div><div class="tile-label">Clothing</div><div class="tile-sub">ملابس</div></div>
+        <div class="tile sage"><div class="tile-num">10</div><div class="tile-label">Baby Formula</div><div class="tile-sub">حليب · infant priority</div></div>
+        <div class="tile sage"><div class="tile-num">10</div><div class="tile-label">Diapers</div><div class="tile-sub">حفاضات</div></div>
+        <div class="tile sage"><div class="tile-num">7</div><div class="tile-label">Hygiene Kits</div><div class="tile-sub">Dignity supplies</div></div>
+        <div class="tile sage"><div class="tile-num">6</div><div class="tile-label">Blankets</div><div class="tile-sub">حرامات</div></div>
+        <div class="tile sage"><div class="tile-num">5</div><div class="tile-label">Cash Assistance</div><div class="tile-sub">Emergency funds</div></div>
+        <div class="tile sage"><div class="tile-num">11</div><div class="tile-label">Other Items</div><div class="tile-sub">Medicine, supplies, misc</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SEXUAL VIOLENCE -->
+<section class="sec-dark" id="sgbv">
+  <div class="wrap">
+    <h2 class="sh" style="color:var(--ivory)">Sexual violence against children<br>did not stop <em>during the war.</em></h2>
+    <p class="ssub" style="color:var(--ivory-warm)">Between IDP shelters and the regular child justice system, UPEL documented 21 cases of sexual violence against children in March and April 2026. Five occurred in displacement settings — collective and non-collective shelters. Sixteen were in the general population. Every case required immediate legal, psycho-social and shelter intervention.</p>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid rgba(244,239,230,0.2);position:relative;z-index:2;margin-bottom:48px">
+      <div style="padding:48px 40px;border-right:1px solid rgba(244,239,230,0.15)">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#FF8B8B;margin-bottom:24px;font-weight:500">Among IDP children · in shelters</div>
+        <div style="font-family:'Fraunces',serif;font-size:96px;font-weight:300;line-height:.85;color:#FF8B8B;font-style:italic;font-variation-settings:'opsz' 144;margin-bottom:20px">5</div>
+        <div style="font-family:'Fraunces',serif;font-size:18px;font-weight:300;color:var(--ivory-warm);line-height:1.55;margin-bottom:24px">Children who experienced sexual abuse while displaced — in collective and non-collective shelters. These cases emerged during IDP case management and required immediate protection response.</div>
+        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(244,239,230,0.12);border:1px solid rgba(244,239,230,0.12)">
+          <div style="background:var(--navy-deep);padding:20px 16px">
+            <div style="font-family:'Fraunces',serif;font-size:32px;font-weight:300;color:var(--ivory);margin-bottom:4px">3</div>
+            <div style="font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--ivory-warm);opacity:.6">Girls</div>
+          </div>
+          <div style="background:var(--navy-deep);padding:20px 16px">
+            <div style="font-family:'Fraunces',serif;font-size:32px;font-weight:300;color:var(--ivory);margin-bottom:4px">2</div>
+            <div style="font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--ivory-warm);opacity:.6">Boys</div>
+          </div>
+        </div>
+        <div style="margin-top:20px;display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(244,239,230,0.12);border:1px solid rgba(244,239,230,0.12)">
+          <div style="background:var(--navy-deep);padding:16px">
+            <div style="font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:#FF8B8B;opacity:.8;margin-bottom:4px">Services provided</div>
+            <div style="font-family:'Inter',sans-serif;font-size:12px;color:var(--ivory-warm);opacity:.75;line-height:1.6">Legal support, PSS, shelter relocation</div>
+          </div>
+          <div style="background:var(--navy-deep);padding:16px">
+            <div style="font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:#FF8B8B;opacity:.8;margin-bottom:4px">Setting</div>
+            <div style="font-family:'Inter',sans-serif;font-size:12px;color:var(--ivory-warm);opacity:.75;line-height:1.6">Collective &amp; non-collective shelters</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="padding:48px 40px">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--ivory-warm);opacity:.7;margin-bottom:24px;font-weight:500">Non-IDP · children in contact with law</div>
+        <div style="font-family:'Fraunces',serif;font-size:96px;font-weight:300;line-height:.85;color:var(--ivory);font-variation-settings:'opsz' 144;margin-bottom:20px">15</div>
+        <div style="font-family:'Fraunces',serif;font-size:18px;font-weight:300;color:var(--ivory-warm);line-height:1.55;margin-bottom:24px">Children who were victims of sexual violence in the regular child justice system. Court representation, social investigation and follow-up were maintained throughout the war.</div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:#FF8B8B;opacity:.8;margin-bottom:8px">Type of sexual violence</div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(244,239,230,0.12);border:1px solid rgba(244,239,230,0.12)">
+          <div style="background:var(--navy-deep);padding:16px 12px">
+            <div style="font-family:'Fraunces',serif;font-size:28px;font-weight:300;color:var(--ivory);margin-bottom:4px">10</div>
+            <div style="font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:.12em;text-transform:uppercase;color:var(--ivory-warm);opacity:.6">Sexual Harassment<br>تحرش جنسي</div>
+          </div>
+          <div style="background:var(--navy-deep);padding:16px 12px">
+            <div style="font-family:'Fraunces',serif;font-size:28px;font-weight:300;color:var(--ivory);margin-bottom:4px">3</div>
+            <div style="font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:.12em;text-transform:uppercase;color:var(--ivory-warm);opacity:.6">Sexual Assault<br>اعتداء جنسي</div>
+          </div>
+          <div style="background:var(--navy-deep);padding:16px 12px">
+            <div style="font-family:'Fraunces',serif;font-size:28px;font-weight:300;color:var(--ivory);margin-bottom:4px">2</div>
+            <div style="font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:.12em;text-transform:uppercase;color:var(--ivory-warm);opacity:.6">Rape<br>اغتصاب</div>
+          </div>
+        </div>
+
+        <div style="font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:#FF8B8B;opacity:.8;margin:16px 0 8px">Perpetrators</div>
+        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(244,239,230,0.12);border:1px solid rgba(244,239,230,0.12)">
+          <div style="background:var(--navy-deep);padding:16px 12px">
+            <div style="font-family:'Fraunces',serif;font-size:28px;font-weight:300;color:#FF8B8B;font-style:italic;margin-bottom:4px">5</div>
+            <div style="font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:.12em;text-transform:uppercase;color:var(--ivory-warm);opacity:.6">Father · الوالد</div>
+          </div>
+          <div style="background:var(--navy-deep);padding:16px 12px">
+            <div style="font-family:'Fraunces',serif;font-size:28px;font-weight:300;color:#FF8B8B;font-style:italic;margin-bottom:4px">4</div>
+            <div style="font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:.12em;text-transform:uppercase;color:var(--ivory-warm);opacity:.6">Mother · الوالدة</div>
+          </div>
+        </div>
+        <div style="margin-top:-1px;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(244,239,230,0.12);border:1px solid rgba(244,239,230,0.12);border-top:none">
+          <div style="background:var(--navy-deep);padding:14px 10px">
+            <div style="font-family:'Fraunces',serif;font-size:22px;font-weight:300;color:var(--ivory);margin-bottom:2px">1</div>
+            <div style="font-family:'JetBrains Mono',monospace;font-size:7px;letter-spacing:.1em;text-transform:uppercase;color:var(--ivory-warm);opacity:.6">Uncle · العم</div>
+          </div>
+          <div style="background:var(--navy-deep);padding:14px 10px">
+            <div style="font-family:'Fraunces',serif;font-size:22px;font-weight:300;color:var(--ivory);margin-bottom:2px">1</div>
+            <div style="font-family:'JetBrains Mono',monospace;font-size:7px;letter-spacing:.1em;text-transform:uppercase;color:var(--ivory-warm);opacity:.6">Brother-in-law · صهر</div>
+          </div>
+          <div style="background:var(--navy-deep);padding:14px 10px">
+            <div style="font-family:'Fraunces',serif;font-size:22px;font-weight:300;color:var(--ivory);margin-bottom:2px">1</div>
+            <div style="font-family:'JetBrains Mono',monospace;font-size:7px;letter-spacing:.1em;text-transform:uppercase;color:var(--ivory-warm);opacity:.6">Aunt · العمة</div>
+          </div>
+        </div>
+        <div style="font-family:'Inter',sans-serif;font-size:11px;color:var(--ivory-warm);opacity:.5;margin-top:10px">12 identified perpetrators — 9 are parents. 11 of 15 victims are boys.</div>
+      </div>
+    </div>
+
+    <div class="a8-pullquote">
+      Twenty children. Five in shelters meant to protect them. Fifteen in homes and communities already under strain. Sexual violence does not pause for war — it <em>accelerates.</em>
+      <span class="attr">— UPEL Protection Team · April 2026</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- PROTECTION — REGULAR WORK -->
+<section class="sec-light" id="protection">
+  <div class="wrap">
+    <h2 class="sh">Protection files &amp; <em>child justice.</em></h2>
+    <p class="ssub">Beyond IDP response, UPEL continued its core mandate — protection case management, court representation, and judicial follow-up across all six governorates. Even during the war. Even while our social workers were displaced. March 2 – April 16, 2026.</p>
+
+    <div class="ctx-grid">
+      <div class="ctx-body">
+        <p>During the same period that UPEL was responding to the IDP crisis, <strong>122 children in conflict with the law</strong> (offenders) and <strong>66 children in contact with the law</strong> (victims of crimes) required judicial follow-up, social investigation, and court attendance across six governorates. These are not IDP cases — these are children in the regular child justice system whose cases could not wait.</p>
+        <p>Custody and displacement complicated everything: phone calls were made to check if children in existing protection files had changed addresses. Social workers tracked down families who had been displaced mid-case. Court hearings continued — <strong>85 court sessions attended</strong> in March and April alone, the vast majority in Mount Lebanon.</p>
+        <p>In parallel, <strong>15 new protection files</strong> were opened and <strong>60 protection follow-ups</strong> conducted. The system never stopped.</p>
+      </div>
+      <div class="ctx-pq">"Our caseworkers were themselves displaced — sleeping in shelters, on colleagues' floors — and still showing up at the courthouse the next morning to represent a child."<span class="attr">— UPEL Coordination · April 2026</span></div>
+    </div>
+
+    <div style="margin-top:48px">
+      <div class="slabel">Children in conflict with the law — offenders</div>
+      <div class="tile-grid c4">
+        <div class="tile alert"><div class="tile-num">122</div><div class="tile-label">Children in Conflict with Law</div><div class="tile-sub">Offenders · March – April 2026</div></div>
+        <div class="tile"><div class="tile-num">30</div><div class="tile-label">Theft</div><div class="tile-sub">السرقة</div></div>
+        <div class="tile"><div class="tile-num">14</div><div class="tile-label">Drug Use</div><div class="tile-sub">تعاطي المخدرات</div></div>
+        <div class="tile alert"><div class="tile-num">8</div><div class="tile-label">Rape</div><div class="tile-sub">الاغتصاب</div></div>
+        <div class="tile"><div class="tile-num">6</div><div class="tile-label">Illegal Entry</div><div class="tile-sub">الدخول غير القانوني</div></div>
+        <div class="tile alert"><div class="tile-num">5</div><div class="tile-label">Attempted Murder</div><div class="tile-sub">محاولة قتل</div></div>
+        <div class="tile"><div class="tile-num">4</div><div class="tile-label">Blackmail</div><div class="tile-sub">الابتزاز</div></div>
+        <div class="tile"><div class="tile-num">55</div><div class="tile-label">Other Offenses</div><div class="tile-sub">30+14+8+6+5+4+55 = 122</div></div>
+      </div>
+    </div>
+
+    <div style="margin-top:48px">
+      <div class="slabel">Crimes committed on 66 children in contact with law — نوع الاعتداء</div>
+      <p class="ssub" style="margin-bottom:24px">66 children were documented as victims of crimes in March–April 2026. The crimes below are from the نوع الاعتداء (Type of Assault) column in the case sheets.</p>
+      
+      <div class="tile-grid c4">
+        <div class="tile alert"><div class="tile-num">66</div><div class="tile-label">Children in Contact with Law</div><div class="tile-sub">Victims · March – April 2026</div></div>
+        <div class="tile alert"><div class="tile-num">16</div><div class="tile-label">Domestic Violence</div><div class="tile-sub">العنف المنزلي</div></div>
+        <div class="tile alert"><div class="tile-num">10</div><div class="tile-label">Sexual Harassment</div><div class="tile-sub">التحرش الجنسي</div></div>
+        <div class="tile alert"><div class="tile-num">5</div><div class="tile-label">Kidnapping</div><div class="tile-sub">الاختطاف</div></div>
+        <div class="tile alert"><div class="tile-num">3</div><div class="tile-label">Sexual Assault</div><div class="tile-sub">الاعتداء الجنسي</div></div>
+        <div class="tile alert"><div class="tile-num">2</div><div class="tile-label">Rape</div><div class="tile-sub">الإغتصاب</div></div>
+        <div class="tile"><div class="tile-num">2</div><div class="tile-label">Armed Assault</div><div class="tile-sub">الاعتداء بالسلاح الناري</div></div>
+        <div class="tile"><div class="tile-num">24</div><div class="tile-label">Other</div><div class="tile-sub">أخرى</div><div class="tile-detail">Including: assault, attempted suicide, arson, stabbing, running away from home, car accident.</div></div>
+      </div>
+      <div style="font-family:'Inter',sans-serif;font-size:12px;color:var(--navy);opacity:.5;margin-top:10px;text-align:right">16+10+5+3+2+2+24+4 unrecorded = 66 ✓</div>
+    </div>
+
+    <div style="margin-top:48px">
+      <div class="slabel">Vulnerability profile of the 66 children — الهشاشة</div>
+      <p class="ssub" style="margin-bottom:24px">These are not crimes — they describe the vulnerability context of the same 66 children. A child may have multiple vulnerability flags.</p>
+      <div class="tile-grid c3">
+        <div class="tile"><div class="tile-num">15</div><div class="tile-label">Separated from Family</div><div class="tile-sub">طفل منفصل عن أهله</div></div>
+        <div class="tile"><div class="tile-num">11</div><div class="tile-label">Child Labor</div><div class="tile-sub">عمالة الأطفال</div></div>
+        <div class="tile"><div class="tile-num">5</div><div class="tile-label">Disciplinary Violence</div><div class="tile-sub">العنف التأديبي</div></div>
+        <div class="tile"><div class="tile-num">4</div><div class="tile-label">Unaccompanied Minor</div><div class="tile-sub">طفل غير مصحوب</div></div>
+        <div class="tile"><div class="tile-num">1</div><div class="tile-label">Child Marriage</div><div class="tile-sub">زواج الأطفال</div></div>
+        <div class="tile"><div class="tile-num">1</div><div class="tile-label">In Conflict with Law</div><div class="tile-sub">مواجهة مع القانون</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- COURT & JUDICIAL -->
+<section class="sec-dim" id="court">
+  <div class="wrap">
+    <h2 class="sh">Court hearings &amp; <em>judicial follow-up.</em></h2>
+    <p class="ssub">UPEL social workers attended 85 court sessions across Lebanon in March and April 2026 — representing children in juvenile proceedings, submitting social investigation reports, and ensuring judicial decisions were enforced.</p>
+    <div class="tile-grid c4">
+      <div class="tile"><div class="tile-num">85</div><div class="tile-label">Court Hearings Attended</div><div class="tile-sub">March – April 2026</div></div>
+      <div class="tile"><div class="tile-num">15</div><div class="tile-label">New Protection Files</div><div class="tile-sub">Opened during reporting period</div></div>
+      <div class="tile"><div class="tile-num">60</div><div class="tile-label">Protection Follow-ups</div><div class="tile-sub">Existing cases maintained</div></div>
+      <div class="tile"><div class="tile-num">15</div><div class="tile-label">Social Follow-ups</div><div class="tile-sub">متابعة اجتماعية</div></div>
+    </div>
+
+    
+  </div>
+</section>
+
+
+<!-- FINDINGS -->
+<section class="sec-light" id="findings">
+  <div class="wrap">
+    <h2 class="sh">What we learned.<br>What we <em>ask.</em></h2>
+    <div class="finding-grid">
+      <div class="fcard critical"><div class="fcard-type">▲ Critical</div><h3>The dual burden is <em>unsustainable.</em></h3><p>UPEL is running two full operations simultaneously — IDP emergency response and regular child justice case management. 95 IDP children plus 188 children in contact with law plus 85 court hearings, with displaced staff. This cannot hold without additional resourcing.</p></div>
+      <div class="fcard positive"><div class="fcard-type">● Strength</div><h3>Field activation was <em>immediate.</em></h3><p>From March 2 through April 16, no region went dark. On April 8, teams were documenting cases within hours of both explosions. Court attendance continued the next day. Social workers who were displaced themselves returned to work.</p></div>
+      <div class="fcard action"><div class="fcard-type">→ Ask to partners</div><h3>MOPH coordination must <em>continue.</em></h3><p>When hospitals were overwhelmed on April 8, MOPH facilitated registration for our cases. This coordination pathway — between child protection actors and health facilities — must be formalized and sustained.</p></div>
+      <div class="fcard gap"><div class="fcard-type">◆ Gap</div><h3>PSS and legal capacity are <em>under-dimensioned.</em></h3><p>7 PSS sessions and 7 legal support interventions for IDP children, against 16 sexual violence and 16 domestic violence victim cases in the regular system. The psychologist and legal hours are stretched impossibly thin.</p></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- TIMELINE -->
+<section class="sec-dim" id="timeline">
+  <div class="wrap">
+    <h2 class="sh">Unbroken.<br>From <em>March 1.</em></h2>
+    <div class="tl-list">
+      <div class="tl-entry"><div class="tl-date">Early March 2026</div><div class="tl-body"><strong>IDP tracker opens.</strong> First case logged March 4. Regional focal points activated across five governorates. Court hearings and protection follow-ups continue in parallel — 85 court sessions in March and April.</div></div>
+      <div class="tl-entry"><div class="tl-date">Mid March</div><div class="tl-body"><strong>Caseload surge.</strong> 41 IDP children received one-to-one intervention in March alone. 122 children in conflict with law processed. Social workers track displaced families to update addresses and maintain custody files.</div></div>
+      <div class="tl-entry"><div class="tl-date">Late March – Early April</div><div class="tl-body"><strong>Distribution acceleration.</strong> Food, formula, hygiene kits and cash reach 1,000+ people. Phone follow-up cadence doubles across both IDP and protection workstreams.</div></div>
+      <div class="tl-entry"><div class="tl-date">April 8, 2026</div><div class="tl-body"><strong>The explosions.</strong> Teams already in the field all day. First explosion strikes. Late afternoon, a second explosion hits. 12 new IDP files opened same day. 5 unidentified children recovered. MOPH helps register critical cases at overwhelmed hospitals. Social workers — many displaced themselves — continue through the night.</div></div>
+      <div class="tl-entry"><div class="tl-date">April 9 – 16</div><div class="tl-body"><strong>Sustained response.</strong> Court hearings resume. Protection follow-ups continue. Daily phone tracing for IDP children and protection files alike. No break in coverage across any governorate.</div></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CLOSING -->
+<section class="closing" id="closing">
+  
+  <h2>Three hundred and twenty-seven children.<br>Six governorates. Eighty-five court hearings.<br><em>One unbroken response.</em></h2>
+  <p>95 IDP children. 29 emergency cases on April 8. 122 children in conflict with law. 66 children in contact with law as victims. 15 new protection files. 85 court hearings attended. 60 protection follow-ups. 1,688 people reached. From March 2 to April 16 — through court hearings, explosions and displacement — UPEL has stayed in the field.</p>
+  <div class="closing-meta">
+    <div>L'Union pour la Protection de l'Enfance au Liban</div>
+    <div>Partner Briefing · April 2026</div>
+    <div>Data: UPEL IDP Tracker + Regional Protection Sheets</div>
+    <div>March 2 – April 16, 2026</div>
+  </div>
+</section>
+
+<script>
+const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){const bars=e.target.querySelectorAll('.rbar,.dbar-fill');bars.forEach((b,i)=>{setTimeout(()=>{b.style.width=b.dataset.width+'%'},i*80)})}});},{threshold:.2});
+document.querySelectorAll('section').forEach(s=>obs.observe(s));
+</script>
+</body>
+</html>
